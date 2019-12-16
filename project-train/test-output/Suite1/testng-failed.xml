@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="none">
+  <test name="Regression1">
+    <classes>
+      <class name="guoxiaoli.Demo"/>
+      <class name="guoxiaoli.Demo1"/>
+      <class name="lixuan.LoginTest"/>
+      <class name="zhangfan.BackStageTest"/>
+      <class name="azhouqianqian.BackgroundTest"/>
+      <class name="azhouqianqian.ExchangePoints"/>
+      <class name="azhouqianqian.HomeElectricity"/>
+      <class name="azhouqianqian.Login_Test"/>
+      <class name="azhouqianqian.Pingtuan"/>
+    </classes>
+  </test> <!-- Regression1 -->
+  <test name="Regression1(failed)" parallel="none">
+    <classes>
+      <class name="azhouqianqian.ExchangePoints">
+        <methods>
+          <include name="test2"/>
+          <include name="doAfterMethod"/>
+          <include name="test5"/>
+          <include name="test3"/>
+          <include name="test1"/>
+          <include name="test4"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- azhouqianqian.ExchangePoints -->
+      <class name="guoxiaoli.Demo1">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- guoxiaoli.Demo1 -->
+      <class name="azhouqianqian.BackgroundTest">
+        <methods>
+          <include name="test_add3"/>
+          <include name="doAfterMethod"/>
+          <include name="testindent1"/>
+          <include name="testindent2"/>
+          <include name="backLogin"/>
+          <include name="test_add5"/>
+          <include name="testindent3"/>
+          <include name="testindent4"/>
+          <include name="doBeforeClass"/>
+          <include name="testindent5"/>
+        </methods>
+      </class> <!-- azhouqianqian.BackgroundTest -->
+      <class name="azhouqianqian.HomeElectricity">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- azhouqianqian.HomeElectricity -->
+      <class name="azhouqianqian.Login_Test">
+        <methods>
+          <include name="test_login3" invocation-numbers="0 1"/>
+          <include name="test_login4" invocation-numbers="0 1"/>
+          <include name="test_login1" invocation-numbers="1"/>
+          <include name="test_login2" invocation-numbers="0 1"/>
+          <include name="doAfterMethod"/>
+          <include name="test_login7"/>
+          <include name="doBeforeClass"/>
+          <include name="test_login5" invocation-numbers="0 1"/>
+          <include name="test_login6"/>
+        </methods>
+      </class> <!-- azhouqianqian.Login_Test -->
+      <class name="azhouqianqian.Pingtuan">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="doBeforeClass"/>
+          <include name="test_buy"/>
+        </methods>
+      </class> <!-- azhouqianqian.Pingtuan -->
+      <class name="lixuan.LoginTest">
+        <methods>
+          <include name="opendian" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="login"/>
+          <include name="doAfterMethod"/>
+          <include name="doBeforeClass"/>
+          <include name="tixianshenqing" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- lixuan.LoginTest -->
+      <class name="zhangfan.BackStageTest">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="testEdit" invocation-numbers="0 1 2 3"/>
+          <include name="testAddSizeList" invocation-numbers="0 1 2 3 4"/>
+          <include name="doBeforeClass"/>
+          <include name="testBackstageLogin"/>
+        </methods>
+      </class> <!-- zhangfan.BackStageTest -->
+      <class name="guoxiaoli.Demo">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="login1"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- guoxiaoli.Demo -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

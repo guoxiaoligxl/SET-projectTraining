@@ -1,0 +1,2709 @@
+<html>
+<head>
+<title>TestNG:  Regression1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>164/39/1</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Dec 13 12:06:00 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>6467 seconds (6467498 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='lixuan.LoginTest.opendian()'><b>opendian</b><br>Test class: lixuan.LoginTest<br>Parameters: lalala, 123456, 123456, balala, 325235, 18865433221, 2@qq.com, 河北省, 保定市, 北市区, 啦啦啦</td>
+<td><div><pre>org.openqa.selenium.InvalidArgumentException: File not found: C:\Users\李璇\Pictures\Saved Pictures\timg.jpg
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10408, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e296f4bf-5507-4abc-a69c-37b38d280453
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.webtest.core.WebDriverEngine.type(WebDriverEngine.java:144)
+	at lixuan.LoginTest.opendian(LoginTest.java:318)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace568877261", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace568877261'><pre>org.openqa.selenium.InvalidArgumentException: File not found: C:\Users\李璇\Pictures\Saved Pictures\timg.jpg
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10408, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e296f4bf-5507-4abc-a69c-37b38d280453
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.webtest.core.WebDriverEngine.type(WebDriverEngine.java:144)
+	at lixuan.LoginTest.opendian(LoginTest.java:318)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>6</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.opendian()'><b>opendian</b><br>Test class: lixuan.LoginTest<br>Parameters: 郭文迪, 123456, 123456, balala, 325235, 18865433221, 3@qq.com, 河北省, 保定市, 北市区, 啦啦啦</td>
+<td><div><pre>org.openqa.selenium.InvalidArgumentException: File not found: C:\Users\李璇\Pictures\Saved Pictures\timg.jpg
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10408, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e296f4bf-5507-4abc-a69c-37b38d280453
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.webtest.core.WebDriverEngine.type(WebDriverEngine.java:144)
+	at lixuan.LoginTest.opendian(LoginTest.java:318)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1439252493", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1439252493'><pre>org.openqa.selenium.InvalidArgumentException: File not found: C:\Users\李璇\Pictures\Saved Pictures\timg.jpg
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10408, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e296f4bf-5507-4abc-a69c-37b38d280453
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.webtest.core.WebDriverEngine.type(WebDriverEngine.java:144)
+	at lixuan.LoginTest.opendian(LoginTest.java:318)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>5</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.opendian()'><b>opendian</b><br>Test class: lixuan.LoginTest<br>Parameters: lalala, 123456, 1234566, balala, 325235, 18865433221, 4@qq.com, 河北省, 保定市, 北市区, 啦啦啦</td>
+<td><div><pre>org.openqa.selenium.InvalidArgumentException: File not found: C:\Users\李璇\Pictures\Saved Pictures\timg.jpg
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10408, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e296f4bf-5507-4abc-a69c-37b38d280453
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.webtest.core.WebDriverEngine.type(WebDriverEngine.java:144)
+	at lixuan.LoginTest.opendian(LoginTest.java:318)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1259816781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1259816781'><pre>org.openqa.selenium.InvalidArgumentException: File not found: C:\Users\李璇\Pictures\Saved Pictures\timg.jpg
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10408, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e296f4bf-5507-4abc-a69c-37b38d280453
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.webtest.core.WebDriverEngine.type(WebDriverEngine.java:144)
+	at lixuan.LoginTest.opendian(LoginTest.java:318)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>6</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.opendian()'><b>opendian</b><br>Test class: lixuan.LoginTest<br>Parameters: lalala, 123456, 123456, balala, 325235, 1886543322, 5@qq.com, 河北省, 保定市, 北市区, 啦啦啦</td>
+<td><div><pre>org.openqa.selenium.InvalidArgumentException: File not found: C:\Users\李璇\Pictures\Saved Pictures\timg.jpg
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10408, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e296f4bf-5507-4abc-a69c-37b38d280453
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.webtest.core.WebDriverEngine.type(WebDriverEngine.java:144)
+	at lixuan.LoginTest.opendian(LoginTest.java:318)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace730011718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace730011718'><pre>org.openqa.selenium.InvalidArgumentException: File not found: C:\Users\李璇\Pictures\Saved Pictures\timg.jpg
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10408, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e296f4bf-5507-4abc-a69c-37b38d280453
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.webtest.core.WebDriverEngine.type(WebDriverEngine.java:144)
+	at lixuan.LoginTest.opendian(LoginTest.java:318)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>7</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.opendian()'><b>opendian</b><br>Test class: lixuan.LoginTest<br>Parameters: lalala, 123456, 123456, balala, 325235, 188654332211, 6@qq.com, 河北省, 保定市, 北市区, 啦啦啦</td>
+<td><div><pre>org.openqa.selenium.InvalidArgumentException: File not found: C:\Users\李璇\Pictures\Saved Pictures\timg.jpg
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10408, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e296f4bf-5507-4abc-a69c-37b38d280453
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.webtest.core.WebDriverEngine.type(WebDriverEngine.java:144)
+	at lixuan.LoginTest.opendian(LoginTest.java:318)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace94965232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace94965232'><pre>org.openqa.selenium.InvalidArgumentException: File not found: C:\Users\李璇\Pictures\Saved Pictures\timg.jpg
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10408, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e296f4bf-5507-4abc-a69c-37b38d280453
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.webtest.core.WebDriverEngine.type(WebDriverEngine.java:144)
+	at lixuan.LoginTest.opendian(LoginTest.java:318)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>6</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.opendian()'><b>opendian</b><br>Test class: lixuan.LoginTest<br>Parameters: lalala, 123456, 123456, balala, 325235, 18865433221, 7@qq.com, 浙江省, 保定市, 北市区, 啦啦啦</td>
+<td><div><pre>org.openqa.selenium.InvalidArgumentException: File not found: C:\Users\李璇\Pictures\Saved Pictures\timg.jpg
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10408, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e296f4bf-5507-4abc-a69c-37b38d280453
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.webtest.core.WebDriverEngine.type(WebDriverEngine.java:144)
+	at lixuan.LoginTest.opendian(LoginTest.java:318)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace547180082", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace547180082'><pre>org.openqa.selenium.InvalidArgumentException: File not found: C:\Users\李璇\Pictures\Saved Pictures\timg.jpg
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10408, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e296f4bf-5507-4abc-a69c-37b38d280453
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.webtest.core.WebDriverEngine.type(WebDriverEngine.java:144)
+	at lixuan.LoginTest.opendian(LoginTest.java:318)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>5</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='azhouqianqian.ExchangePoints.test1()'><b>test1</b><br>Test class: azhouqianqian.ExchangePoints</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.ExchangePoints.test1(ExchangePoints.java:27)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace381352144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace381352144'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.ExchangePoints.test1(ExchangePoints.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>7</td>
+<td>azhouqianqian.ExchangePoints@133e16fd</td></tr>
+<tr>
+<td title='azhouqianqian.ExchangePoints.test2()'><b>test2</b><br>Test class: azhouqianqian.ExchangePoints</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.ExchangePoints.test2(ExchangePoints.java:45)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace348244902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace348244902'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.ExchangePoints.test2(ExchangePoints.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>20</td>
+<td>azhouqianqian.ExchangePoints@133e16fd</td></tr>
+<tr>
+<td title='azhouqianqian.ExchangePoints.test3()'><b>test3</b><br>Test class: azhouqianqian.ExchangePoints</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.ExchangePoints.test3(ExchangePoints.java:69)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1867886327", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1867886327'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.ExchangePoints.test3(ExchangePoints.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>6</td>
+<td>azhouqianqian.ExchangePoints@133e16fd</td></tr>
+<tr>
+<td title='azhouqianqian.ExchangePoints.test4()'><b>test4</b><br>Test class: azhouqianqian.ExchangePoints</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.ExchangePoints.test4(ExchangePoints.java:101)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1847234168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1847234168'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.ExchangePoints.test4(ExchangePoints.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>6</td>
+<td>azhouqianqian.ExchangePoints@133e16fd</td></tr>
+<tr>
+<td title='azhouqianqian.ExchangePoints.test5()'><b>test5</b><br>Test class: azhouqianqian.ExchangePoints</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.ExchangePoints.test5(ExchangePoints.java:128)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace142115220", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace142115220'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.ExchangePoints.test5(ExchangePoints.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>6</td>
+<td>azhouqianqian.ExchangePoints@133e16fd</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testAddSizeList()'><b>testAddSizeList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: large, L, 90</td>
+<td><div><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id OpenaddSpecWin
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testAddSizeList(BackStageTest.java:267)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1233049719", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1233049719'><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id OpenaddSpecWin
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testAddSizeList(BackStageTest.java:267)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>19</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testAddSizeList()'><b>testAddSizeList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: medium, M, 80</td>
+<td><div><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id OpenaddSpecWin
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testAddSizeList(BackStageTest.java:267)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace549160372", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace549160372'><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id OpenaddSpecWin
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testAddSizeList(BackStageTest.java:267)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>17</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testAddSizeList()'><b>testAddSizeList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: small, S, 70</td>
+<td><div><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id OpenaddSpecWin
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testAddSizeList(BackStageTest.java:267)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1677319673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1677319673'><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id OpenaddSpecWin
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testAddSizeList(BackStageTest.java:267)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>17</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testAddSizeList()'><b>testAddSizeList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: extrasmall, XS, 60</td>
+<td><div><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id OpenaddSpecWin
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testAddSizeList(BackStageTest.java:267)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1173009186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1173009186'><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id OpenaddSpecWin
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testAddSizeList(BackStageTest.java:267)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>17</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testAddSizeList()'><b>testAddSizeList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: extralarge, XL , 100</td>
+<td><div><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id OpenaddSpecWin
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testAddSizeList(BackStageTest.java:267)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2015110295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2015110295'><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id OpenaddSpecWin
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testAddSizeList(BackStageTest.java:267)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>17</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testEdit()'><b>testEdit</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 211, 210</td>
+<td><div><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id Opengoods_setting
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testEdit(BackStageTest.java:145)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1762578746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1762578746'><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id Opengoods_setting
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testEdit(BackStageTest.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>10</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testEdit()'><b>testEdit</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 212, 213</td>
+<td><div><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id Opengoods_setting
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testEdit(BackStageTest.java:145)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace995529850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace995529850'><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id Opengoods_setting
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testEdit(BackStageTest.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>10</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testEdit()'><b>testEdit</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 209, 208</td>
+<td><div><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id Opengoods_setting
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testEdit(BackStageTest.java:145)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1541840766", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1541840766'><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id Opengoods_setting
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testEdit(BackStageTest.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>10</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testEdit()'><b>testEdit</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 206, 207</td>
+<td><div><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id Opengoods_setting
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testEdit(BackStageTest.java:145)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1175347198", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1175347198'><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id Opengoods_setting
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.webtest.core.WebDriverEngine.enterFrame(WebDriverEngine.java:75)
+	at zhangfan.BackStageTest.testEdit(BackStageTest.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>11</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.test_add3()'><b>test_add3</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt; is not clickable at point (433,404) because another element &lt;iframe src=&quot;about:blank&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 12556, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b9738f8-2df2-45c9-b182-2618d6d04a6b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:158)
+	at azhouqianqian.BackgroundTest.test_add3(BackgroundTest.java:252)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace740654090", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace740654090'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt; is not clickable at point (433,404) because another element &lt;iframe src=&quot;about:blank&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 12556, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b9738f8-2df2-45c9-b182-2618d6d04a6b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:158)
+	at azhouqianqian.BackgroundTest.test_add3(BackgroundTest.java:252)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>14</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.test_add5()'><b>test_add5</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt; is not clickable at point (433,316) because another element &lt;iframe src=&quot;about:blank&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 12556, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b9738f8-2df2-45c9-b182-2618d6d04a6b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:158)
+	at azhouqianqian.BackgroundTest.test_add5(BackgroundTest.java:300)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1815672030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1815672030'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt; is not clickable at point (433,316) because another element &lt;iframe src=&quot;about:blank&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 12556, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b9738f8-2df2-45c9-b182-2618d6d04a6b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:158)
+	at azhouqianqian.BackgroundTest.test_add5(BackgroundTest.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>15</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='azhouqianqian.Pingtuan.test_buy()'><b>test_buy</b><br>Test class: azhouqianqian.Pingtuan</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.Pingtuan.test_buy(Pingtuan.java:111)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace745593472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace745593472'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.Pingtuan.test_buy(Pingtuan.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>22</td>
+<td>azhouqianqian.Pingtuan@7f416310</td></tr>
+<tr>
+<td title='azhouqianqian.Login_Test.test_login1()'><b>test_login1</b><br>Test class: azhouqianqian.Login_Test<br>Parameters: lixuan, 123456</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.Login_Test.test_login1(Login_Test.java:39)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace924931051", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace924931051'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.Login_Test.test_login1(Login_Test.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>14</td>
+<td>azhouqianqian.Login_Test@1ad282e0</td></tr>
+<tr>
+<td title='azhouqianqian.Login_Test.test_login2()'><b>test_login2</b><br>Test class: azhouqianqian.Login_Test<br>Parameters: zhouqia1n, 123456</td>
+<td><div><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login2(Login_Test.java:62)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1863321646", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1863321646'><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login2(Login_Test.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>14</td>
+<td>azhouqianqian.Login_Test@1ad282e0</td></tr>
+<tr>
+<td title='azhouqianqian.Login_Test.test_login2()'><b>test_login2</b><br>Test class: azhouqianqian.Login_Test<br>Parameters: lixuan1, 123456</td>
+<td><div><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login2(Login_Test.java:62)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace931654339", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace931654339'><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login2(Login_Test.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>14</td>
+<td>azhouqianqian.Login_Test@1ad282e0</td></tr>
+<tr>
+<td title='azhouqianqian.Login_Test.test_login3()'><b>test_login3</b><br>Test class: azhouqianqian.Login_Test<br>Parameters: zhouqian, 1234356</td>
+<td><div><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login3(Login_Test.java:85)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1644929436", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1644929436'><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login3(Login_Test.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>14</td>
+<td>azhouqianqian.Login_Test@1ad282e0</td></tr>
+<tr>
+<td title='azhouqianqian.Login_Test.test_login3()'><b>test_login3</b><br>Test class: azhouqianqian.Login_Test<br>Parameters: lixuan, 1234356</td>
+<td><div><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login3(Login_Test.java:85)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace44047445", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace44047445'><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login3(Login_Test.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>14</td>
+<td>azhouqianqian.Login_Test@1ad282e0</td></tr>
+<tr>
+<td title='azhouqianqian.Login_Test.test_login4()'><b>test_login4</b><br>Test class: azhouqianqian.Login_Test<br>Parameters: zhouqian&, 123456</td>
+<td><div><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login4(Login_Test.java:108)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace874961122", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace874961122'><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login4(Login_Test.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>14</td>
+<td>azhouqianqian.Login_Test@1ad282e0</td></tr>
+<tr>
+<td title='azhouqianqian.Login_Test.test_login4()'><b>test_login4</b><br>Test class: azhouqianqian.Login_Test<br>Parameters: lixuan, 123456</td>
+<td><div><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login4(Login_Test.java:108)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1460639415", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1460639415'><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login4(Login_Test.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>14</td>
+<td>azhouqianqian.Login_Test@1ad282e0</td></tr>
+<tr>
+<td title='azhouqianqian.Login_Test.test_login5()'><b>test_login5</b><br>Test class: azhouqianqian.Login_Test<br>Parameters: zhouqian, 1234-56</td>
+<td><div><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login5(Login_Test.java:131)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace497934712", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace497934712'><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login5(Login_Test.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>14</td>
+<td>azhouqianqian.Login_Test@1ad282e0</td></tr>
+<tr>
+<td title='azhouqianqian.Login_Test.test_login5()'><b>test_login5</b><br>Test class: azhouqianqian.Login_Test<br>Parameters: lixuan, 123456</td>
+<td><div><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login5(Login_Test.java:131)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1056538364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1056538364'><pre>java.lang.AssertionError: 登录失败
+	at azhouqianqian.Login_Test.test_login5(Login_Test.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>15</td>
+<td>azhouqianqian.Login_Test@1ad282e0</td></tr>
+<tr>
+<td title='azhouqianqian.Login_Test.test_login7()'><b>test_login7</b><br>Test class: azhouqianqian.Login_Test</td>
+<td><div><pre>org.testng.TestNGException: 
+The data provider is trying to pass 1 parameters but the method azhouqianqian.Login_Test#test_login7 takes 2 and TestNG is unable in inject a suitable object
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1
+	... 17 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace469922359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace469922359'><pre>org.testng.TestNGException: 
+The data provider is trying to pass 1 parameters but the method azhouqianqian.Login_Test#test_login7 takes 2 and TestNG is unable in inject a suitable object
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1255)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1251)
+	... 17 more
+</pre></div></td>
+<td>14</td>
+<td>azhouqianqian.Login_Test@1ad282e0</td></tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.testindent1()'><b>testindent1</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.BackgroundTest.testindent1(BackgroundTest.java:39)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace244842574", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace244842574'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.BackgroundTest.testindent1(BackgroundTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>17</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.testindent2()'><b>testindent2</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.BackgroundTest.testindent2(BackgroundTest.java:56)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace921262971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace921262971'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.BackgroundTest.testindent2(BackgroundTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>14</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.testindent3()'><b>testindent3</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.BackgroundTest.testindent3(BackgroundTest.java:82)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1803807817", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1803807817'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.BackgroundTest.testindent3(BackgroundTest.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>14</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.testindent4()'><b>testindent4</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.BackgroundTest.testindent4(BackgroundTest.java:113)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1939144888", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1939144888'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.BackgroundTest.testindent4(BackgroundTest.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>17</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.testindent5()'><b>testindent5</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.BackgroundTest.testindent5(BackgroundTest.java:133)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace911380925", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace911380925'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.BackgroundTest.testindent5(BackgroundTest.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>17</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='lixuan.LoginTest.tixianshenqing()'><b>tixianshenqing</b><br>Test class: lixuan.LoginTest<br>Parameters: #￥%……, 工商银行</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timeout loading page after 300000ms
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10408, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e296f4bf-5507-4abc-a69c-37b38d280453
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:158)
+	at lixuan.LoginTest.tixianshenqing(LoginTest.java:152)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace521097942", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace521097942'><pre>org.openqa.selenium.TimeoutException: Timeout loading page after 300000ms
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10408, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e296f4bf-5507-4abc-a69c-37b38d280453
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:158)
+	at lixuan.LoginTest.tixianshenqing(LoginTest.java:152)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>439</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.Show_list7()'><b>Show_list7</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td></td>
+<td>157</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='lixuan.LoginTest.add1()'><b>add1</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>24</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.add2()'><b>add2</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>29</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addBrandClassification()'><b>addBrandClassification</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 鞋子</td>
+<td></td>
+<td>20</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addBrandClassification()'><b>addBrandClassification</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 清洁用品</td>
+<td></td>
+<td>18</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addBrandClassification()'><b>addBrandClassification</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 个人护理</td>
+<td></td>
+<td>20</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addBrandClassification()'><b>addBrandClassification</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 彩妆</td>
+<td></td>
+<td>18</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addBrandList()'><b>addBrandList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 阿迪达斯, http://www.adidas.com</td>
+<td></td>
+<td>19</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addBrandList()'><b>addBrandList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 彪马, http://www.puma.com</td>
+<td></td>
+<td>18</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addBrandList()'><b>addBrandList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 李宁, http://www.lining.com</td>
+<td></td>
+<td>19</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addBrandList()'><b>addBrandList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 万斯, http://www.vans.com</td>
+<td></td>
+<td>27</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addClassificationList()'><b>addClassificationList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 食品</td>
+<td></td>
+<td>14</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addClassificationList()'><b>addClassificationList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 酒水</td>
+<td></td>
+<td>14</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addClassificationList()'><b>addClassificationList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 生鲜</td>
+<td></td>
+<td>14</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addClassificationList()'><b>addClassificationList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 容器</td>
+<td></td>
+<td>15</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addModelList()'><b>addModelList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 模型一</td>
+<td></td>
+<td>19</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addModelList()'><b>addModelList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 模型二</td>
+<td></td>
+<td>18</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addModelList()'><b>addModelList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 模型三</td>
+<td></td>
+<td>18</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.addModelList()'><b>addModelList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 模型四</td>
+<td></td>
+<td>18</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 小说, 1</td>
+<td></td>
+<td>22</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 文学, 1</td>
+<td></td>
+<td>22</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 历史, 1</td>
+<td></td>
+<td>22</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 传记, 1</td>
+<td></td>
+<td>22</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 青春, 1</td>
+<td></td>
+<td>22</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 励志, 1</td>
+<td></td>
+<td>22</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 社科, 1</td>
+<td></td>
+<td>22</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 心理, 2</td>
+<td></td>
+<td>22</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 经济, 2</td>
+<td></td>
+<td>22</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 管理, 2</td>
+<td></td>
+<td>22</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='lixuan.LoginTest.allshangpn()'><b>allshangpn</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>87</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.backstage()'><b>backstage</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>11</td>
+<td>guoxiaoli.Demo@48a242ce</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.bagbuy()'><b>bagbuy</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>35</td>
+<td>guoxiaoli.Demo@48a242ce</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.bagcart()'><b>bagcart</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>325</td>
+<td>guoxiaoli.Demo@48a242ce</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.db()'><b>db</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>9</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='lixuan.LoginTest.deleteaddress()'><b>deleteaddress</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>20</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.deletefapiao()'><b>deletefapiao</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>22</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.delivery()'><b>delivery</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 自取, 10, 5公斤, 5, 1, 顾客到店自取</td>
+<td></td>
+<td>19</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.delivery()'><b>delivery</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 他人代取, 15, 6公斤, 6, 2, 由快递站人员代取</td>
+<td></td>
+<td>15</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.delivery()'><b>delivery</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 送货上门, 20, 7公斤, 7, 1, 由工作人员将用户订购的商品送货到家</td>
+<td></td>
+<td>15</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='lixuan.LoginTest.duanxinxi()'><b>duanxinxi</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>10</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.exchangepw()'><b>exchangepw</b><br>Test class: lixuan.LoginTest<br>Parameters: lixuan, chenmeng, chenmeng</td>
+<td></td>
+<td>20</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.exchangepw()'><b>exchangepw</b><br>Test class: lixuan.LoginTest<br>Parameters: chenmeng, lixuan, lixuan</td>
+<td></td>
+<td>15</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.fapiaoguanli()'><b>fapiaoguanli</b><br>Test class: lixuan.LoginTest<br>Parameters: 河北师范大学, 123, 河北师范大学, 17772635489, 工商银行, 3532647, 普通发票</td>
+<td></td>
+<td>27</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.fapiaoguanli()'><b>fapiaoguanli</b><br>Test class: lixuan.LoginTest<br>Parameters: 河北师范大学, 7777, 北京师范大学, 18882763456, 河北银行, 653225, 增值税专用发票</td>
+<td></td>
+<td>28</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.fapiaoguanli()'><b>fapiaoguanli</b><br>Test class: lixuan.LoginTest<br>Parameters: hello, 7777, 河北师范大学, 18882763456, 河北银行, 653225, 增值税专用发票</td>
+<td></td>
+<td>27</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.fapiaoguanli()'><b>fapiaoguanli</b><br>Test class: lixuan.LoginTest<br>Parameters: 河北师范大学, 0, 河北师范大学, 18882763456, 河北银行, 653225, 普通发票</td>
+<td></td>
+<td>28</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.fapiaoguanli()'><b>fapiaoguanli</b><br>Test class: lixuan.LoginTest<br>Parameters: 河北师范大学, 7777, 河北师范大学, 1888276345, 河北银行, 653225, 普通发票</td>
+<td></td>
+<td>27</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.fapiaoguanli()'><b>fapiaoguanli</b><br>Test class: lixuan.LoginTest<br>Parameters: 河北师范大学, 7777, 河北师范大学, 188827634566, 河北银行, 653225, 普通发票</td>
+<td></td>
+<td>28</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.foodbuy()'><b>foodbuy</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>36</td>
+<td>guoxiaoli.Demo@48a242ce</td></tr>
+<tr>
+<td title='lixuan.LoginTest.foodcart()'><b>foodcart</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>5</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.foodcart()'><b>foodcart</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>40</td>
+<td>guoxiaoli.Demo@48a242ce</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.freight()'><b>freight</b><br>Test class: guoxiaoli.Demo1<br>Parameters: VANCL, 凡客配送, http://www.vancl.com, 1</td>
+<td></td>
+<td>4</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.freight()'><b>freight</b><br>Test class: guoxiaoli.Demo1<br>Parameters: DTW, 大田物流, http://www.dtw.com.cn, 1</td>
+<td></td>
+<td>15</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.freight()'><b>freight</b><br>Test class: guoxiaoli.Demo1<br>Parameters: POST, 挂号信, http://www.chinapost.com.cn, 1</td>
+<td></td>
+<td>11</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.freight()'><b>freight</b><br>Test class: guoxiaoli.Demo1<br>Parameters: GSD, 共速达, http://www.gongsuda.com, 1</td>
+<td></td>
+<td>12</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.freight()'><b>freight</b><br>Test class: guoxiaoli.Demo1<br>Parameters: HOAU, 华宇物流, http://www.hoau.net, 1</td>
+<td></td>
+<td>12</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.freight()'><b>freight</b><br>Test class: guoxiaoli.Demo1<br>Parameters: CNEX, 佳吉快运, http://www.jiaji.com, 1</td>
+<td></td>
+<td>12</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.freight()'><b>freight</b><br>Test class: guoxiaoli.Demo1<br>Parameters: JIAYI, 佳怡物流, http://www.jiayi56.com, 1</td>
+<td></td>
+<td>11</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.jiajubuy()'><b>jiajubuy</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>55</td>
+<td>guoxiaoli.Demo@48a242ce</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.jiajucart()'><b>jiajucart</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>325</td>
+<td>guoxiaoli.Demo@48a242ce</td></tr>
+<tr>
+<td title='lixuan.LoginTest.jiaoyijilu()'><b>jiaoyijilu</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>21</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.jiesuan()'><b>jiesuan</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>26</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.jixugouwu()'><b>jixugouwu</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>9</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.login()'><b>login</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>12</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfaddaddress()'><b>myselfaddaddress</b><br>Test class: lixuan.LoginTest<br>Parameters: 李璇, 北京市, 市辖区, 东城区, 北京师范大学, 18831183442, 84333333, 522600</td>
+<td></td>
+<td>31</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfaddaddress()'><b>myselfaddaddress</b><br>Test class: lixuan.LoginTest<br>Parameters: lixuan, 北京市, 市辖区, 东城区, 北京师范大学, 18831183442, 84333333, 522600</td>
+<td></td>
+<td>28</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfaddaddress()'><b>myselfaddaddress</b><br>Test class: lixuan.LoginTest<br>Parameters: $%&*(123, 北京市, 市辖区, 东城区, 北京师范大学, 18831183442, 84333333, 522600</td>
+<td></td>
+<td>28</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfaddaddress()'><b>myselfaddaddress</b><br>Test class: lixuan.LoginTest<br>Parameters: 李璇, 浙江省, 市辖区, 东城区, 北京师范大学, 18831183442, 84333333, 522600</td>
+<td></td>
+<td>28</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfaddaddress()'><b>myselfaddaddress</b><br>Test class: lixuan.LoginTest<br>Parameters: 李璇, 北京市, 市辖区, 东城区, university, 1883118344, 84333333, 522600</td>
+<td></td>
+<td>29</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfaddaddress()'><b>myselfaddaddress</b><br>Test class: lixuan.LoginTest<br>Parameters: 李璇, 北京市, 市辖区, 东城区, %%^&**, 18831183442, 84333333, 522600</td>
+<td></td>
+<td>28</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfaddaddress()'><b>myselfaddaddress</b><br>Test class: lixuan.LoginTest<br>Parameters: 李璇, 北京市, 市辖区, 东城区, 北京师范大学, 188311834422, 84333333, 522600</td>
+<td></td>
+<td>27</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfaddaddress()'><b>myselfaddaddress</b><br>Test class: lixuan.LoginTest<br>Parameters: 李璇, 北京市, 市辖区, 东城区, 北京师范大学, 18831183442, 84333, 522600</td>
+<td></td>
+<td>28</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfchangeaddress()'><b>myselfchangeaddress</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>20</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfjianyi()'><b>myselfjianyi</b><br>Test class: lixuan.LoginTest<br>Parameters: 你好, 希望图片能出来</td>
+<td></td>
+<td>19</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfjianyi()'><b>myselfjianyi</b><br>Test class: lixuan.LoginTest<br>Parameters: ￥%……, 希望图片能出来</td>
+<td></td>
+<td>18</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfjianyi()'><b>myselfjianyi</b><br>Test class: lixuan.LoginTest<br>Parameters: 你好, ￥%……&</td>
+<td></td>
+<td>19</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfjianyi()'><b>myselfjianyi</b><br>Test class: lixuan.LoginTest<br>Parameters: hello, 希望图片能出来</td>
+<td></td>
+<td>19</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfjianyi()'><b>myselfjianyi</b><br>Test class: lixuan.LoginTest<br>Parameters: 你好, hope picture</td>
+<td></td>
+<td>18</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfjianyi()'><b>myselfjianyi</b><br>Test class: lixuan.LoginTest<br>Parameters: %^&*, %^&*</td>
+<td></td>
+<td>18</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.myselfjianyi()'><b>myselfjianyi</b><br>Test class: lixuan.LoginTest<br>Parameters: hello, hope  picture</td>
+<td></td>
+<td>18</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.netset()'><b>netset</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>14</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='lixuan.LoginTest.qingkong()'><b>qingkong</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>14</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.search()'><b>search</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>5</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setback()'><b>setback</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>8</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setnav()'><b>setnav</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>17</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setpassowrd()'><b>setpassowrd</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 12345678, 12345678</td>
+<td></td>
+<td>14</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setpassowrd()'><b>setpassowrd</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 12345679asd, 12345679asd</td>
+<td></td>
+<td>13</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setpassowrd()'><b>setpassowrd</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 12345680zxc#, 12345680zxc#</td>
+<td></td>
+<td>13</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setpassowrd()'><b>setpassowrd</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 123456, 123456</td>
+<td></td>
+<td>13</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setpassowrd()'><b>setpassowrd</b><br>Test class: guoxiaoli.Demo1<br>Parameters: qwAzfgdfcg, qwAzfgdfcg</td>
+<td></td>
+<td>13</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setpassowrd()'><b>setpassowrd</b><br>Test class: guoxiaoli.Demo1<br>Parameters: ADF, ADF</td>
+<td></td>
+<td>12</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setpassowrd()'><b>setpassowrd</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 123456, 123456</td>
+<td></td>
+<td>13</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setquit()'><b>setquit</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>13</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setshop()'><b>setshop</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>5</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='lixuan.LoginTest.shangjiaguanli()'><b>shangjiaguanli</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>17</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.shangpinpingjia()'><b>shangpinpingjia</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>18</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.shangpinzixun()'><b>shangpinzixun</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>9</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.shoucangjia()'><b>shoucangjia</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>10</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.shouhoufuwu()'><b>shouhoufuwu</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>23</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 师大, D:\\pic\\one.jpg, 北京市, 市辖区, 西城区, 新华大街, 123455, 15215215215, 1</td>
+<td></td>
+<td>12</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 科大, D:\\pic\\second.jpg, 北京市, 市辖区, 东城区, 新华大街, 123456, 15215215216, 1</td>
+<td></td>
+<td>21</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 医大, D:\\pic\\third.jpg, 北京市, 市辖区, 朝阳区, 新华大街, 123457, 15215215217, 1</td>
+<td></td>
+<td>12</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 北大, D:\\pic\\forth.jpg, 北京市, 市辖区, 海淀区, 新华大街, 123458, 15215215218, 1</td>
+<td></td>
+<td>22</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 师大, D:\\pic\\fifth.jpg, 天津市, 市辖区, 和平区, 裕华大街, 123459, 15215215219, 1</td>
+<td></td>
+<td>12</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 科大, D:\\pic\\sixth.jpg, 天津市, 市辖区, 河西区, 裕华大街, 123451, 15215215220, 1</td>
+<td></td>
+<td>20</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 医大, D:\\pic\\seventh.jpg, 天津市, 市辖区, 河东区, 裕华大街, 123452, 15215215221, 1</td>
+<td></td>
+<td>12</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: asd, D:\\pic\\seventh.jpg, 河北省, 石家庄市, 长安区, 建设大街, 123453, 15215215222, 2</td>
+<td></td>
+<td>21</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: qwe, D:\\pic\\sixth.jpg, 河北省, 石家庄市, 桥西区, 平安大街, 123454, 15215215223, 3</td>
+<td></td>
+<td>12</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testAddGoods()'><b>testAddGoods</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 连衣裙, 10, 100, 2, lyq01, 100, 200, 180</td>
+<td></td>
+<td>16</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testAddGoods()'><b>testAddGoods</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 短裤, 12, 120, 3, dk01, 200, 90, 80</td>
+<td></td>
+<td>13</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testAddGoods()'><b>testAddGoods</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 短袖, 8, 90, 1, dxiu02, 200, 80, 80</td>
+<td></td>
+<td>13</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testAddGoods()'><b>testAddGoods</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 女士内衣, 15, 150, 10, nsny01, 100, 200, 200</td>
+<td></td>
+<td>16</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.testAll6()'><b>testAll6</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td></td>
+<td>7</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testBatchDeletionModelList()'><b>testBatchDeletionModelList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 2, 3</td>
+<td></td>
+<td>16</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testBatchDeletionModelList()'><b>testBatchDeletionModelList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 1, 4</td>
+<td></td>
+<td>15</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testBatchDeletionModelList()'><b>testBatchDeletionModelList</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 5, 6</td>
+<td></td>
+<td>15</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testBatchOperation()'><b>testBatchOperation</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 211, 210</td>
+<td></td>
+<td>15</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testBatchOperation()'><b>testBatchOperation</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 212, 213</td>
+<td></td>
+<td>15</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testBatchOperation()'><b>testBatchOperation</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 209, 208</td>
+<td></td>
+<td>15</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testBatchOperation()'><b>testBatchOperation</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 206, 207</td>
+<td></td>
+<td>15</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testClassificationList()'><b>testClassificationList</b><br>Test class: zhangfan.BackStageTest</td>
+<td></td>
+<td>11</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testLotPending()'><b>testLotPending</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 211, 210</td>
+<td></td>
+<td>15</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testLotPending()'><b>testLotPending</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 212, 213</td>
+<td></td>
+<td>15</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testLotPending()'><b>testLotPending</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 209, 208</td>
+<td></td>
+<td>15</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testLotPending()'><b>testLotPending</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 206, 207</td>
+<td></td>
+<td>15</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testShareGoods()'><b>testShareGoods</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 211, 210</td>
+<td></td>
+<td>11</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testShareGoods()'><b>testShareGoods</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 212, 213</td>
+<td></td>
+<td>11</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testShareGoods()'><b>testShareGoods</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 209, 208</td>
+<td></td>
+<td>11</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testShareGoods()'><b>testShareGoods</b><br>Test class: zhangfan.BackStageTest<br>Parameters: 206, 207</td>
+<td></td>
+<td>11</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testViewBrandClassification()'><b>testViewBrandClassification</b><br>Test class: zhangfan.BackStageTest</td>
+<td></td>
+<td>11</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testViewBrandList()'><b>testViewBrandList</b><br>Test class: zhangfan.BackStageTest</td>
+<td></td>
+<td>11</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testViewModelList()'><b>testViewModelList</b><br>Test class: zhangfan.BackStageTest</td>
+<td></td>
+<td>11</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='zhangfan.BackStageTest.testViewSizeList()'><b>testViewSizeList</b><br>Test class: zhangfan.BackStageTest</td>
+<td></td>
+<td>11</td>
+<td>zhangfan.BackStageTest@4b9e255</td></tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.test_add1()'><b>test_add1</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td></td>
+<td>22</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.test_add2()'><b>test_add2</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td></td>
+<td>35</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.test_add4()'><b>test_add4</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td></td>
+<td>35</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.test_add6()'><b>test_add6</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td></td>
+<td>28</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.test_add7()'><b>test_add7</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td></td>
+<td>23</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='azhouqianqian.HomeElectricity.test_jump1()'><b>test_jump1</b><br>Test class: azhouqianqian.HomeElectricity</td>
+<td></td>
+<td>10</td>
+<td>azhouqianqian.HomeElectricity@51b279c9</td></tr>
+<tr>
+<td title='azhouqianqian.Pingtuan.test_jump1()'><b>test_jump1</b><br>Test class: azhouqianqian.Pingtuan</td>
+<td></td>
+<td>14</td>
+<td>azhouqianqian.Pingtuan@7f416310</td></tr>
+<tr>
+<td title='azhouqianqian.HomeElectricity.test_jump2()'><b>test_jump2</b><br>Test class: azhouqianqian.HomeElectricity</td>
+<td></td>
+<td>5</td>
+<td>azhouqianqian.HomeElectricity@51b279c9</td></tr>
+<tr>
+<td title='azhouqianqian.Pingtuan.test_jump2()'><b>test_jump2</b><br>Test class: azhouqianqian.Pingtuan</td>
+<td></td>
+<td>16</td>
+<td>azhouqianqian.Pingtuan@7f416310</td></tr>
+<tr>
+<td title='azhouqianqian.HomeElectricity.test_jump3()'><b>test_jump3</b><br>Test class: azhouqianqian.HomeElectricity</td>
+<td></td>
+<td>4</td>
+<td>azhouqianqian.HomeElectricity@51b279c9</td></tr>
+<tr>
+<td title='azhouqianqian.Pingtuan.test_jump3()'><b>test_jump3</b><br>Test class: azhouqianqian.Pingtuan</td>
+<td></td>
+<td>15</td>
+<td>azhouqianqian.Pingtuan@7f416310</td></tr>
+<tr>
+<td title='azhouqianqian.HomeElectricity.test_jump4()'><b>test_jump4</b><br>Test class: azhouqianqian.HomeElectricity</td>
+<td></td>
+<td>4</td>
+<td>azhouqianqian.HomeElectricity@51b279c9</td></tr>
+<tr>
+<td title='azhouqianqian.Pingtuan.test_jump4()'><b>test_jump4</b><br>Test class: azhouqianqian.Pingtuan</td>
+<td></td>
+<td>14</td>
+<td>azhouqianqian.Pingtuan@7f416310</td></tr>
+<tr>
+<td title='azhouqianqian.Login_Test.test_login1()'><b>test_login1</b><br>Test class: azhouqianqian.Login_Test<br>Parameters: zhouqian, 123456</td>
+<td></td>
+<td>22</td>
+<td>azhouqianqian.Login_Test@1ad282e0</td></tr>
+<tr>
+<td title='azhouqianqian.Login_Test.test_login7()'><b>test_login7</b><br>Test class: azhouqianqian.Login_Test<br>Parameters: zhouqian, 123456</td>
+<td></td>
+<td>14</td>
+<td>azhouqianqian.Login_Test@1ad282e0</td></tr>
+<tr>
+<td title='azhouqianqian.HomeElectricity.test_order1()'><b>test_order1</b><br>Test class: azhouqianqian.HomeElectricity</td>
+<td></td>
+<td>22</td>
+<td>azhouqianqian.HomeElectricity@51b279c9</td></tr>
+<tr>
+<td title='azhouqianqian.HomeElectricity.test_order2()'><b>test_order2</b><br>Test class: azhouqianqian.HomeElectricity</td>
+<td></td>
+<td>21</td>
+<td>azhouqianqian.HomeElectricity@51b279c9</td></tr>
+<tr>
+<td title='azhouqianqian.HomeElectricity.test_order3()'><b>test_order3</b><br>Test class: azhouqianqian.HomeElectricity</td>
+<td></td>
+<td>21</td>
+<td>azhouqianqian.HomeElectricity@51b279c9</td></tr>
+<tr>
+<td title='azhouqianqian.HomeElectricity.test_order4()'><b>test_order4</b><br>Test class: azhouqianqian.HomeElectricity</td>
+<td></td>
+<td>20</td>
+<td>azhouqianqian.HomeElectricity@51b279c9</td></tr>
+<tr>
+<td title='azhouqianqian.BackgroundTest.test_show8()'><b>test_show8</b><br>Test class: azhouqianqian.BackgroundTest</td>
+<td></td>
+<td>11</td>
+<td>azhouqianqian.BackgroundTest@5e57643e</td></tr>
+<tr>
+<td title='azhouqianqian.HomeElectricity.test_sort1_money()'><b>test_sort1_money</b><br>Test class: azhouqianqian.HomeElectricity</td>
+<td></td>
+<td>17</td>
+<td>azhouqianqian.HomeElectricity@51b279c9</td></tr>
+<tr>
+<td title='azhouqianqian.HomeElectricity.test_sort2_money()'><b>test_sort2_money</b><br>Test class: azhouqianqian.HomeElectricity</td>
+<td></td>
+<td>16</td>
+<td>azhouqianqian.HomeElectricity@51b279c9</td></tr>
+<tr>
+<td title='lixuan.LoginTest.tixianshenqing()'><b>tixianshenqing</b><br>Test class: lixuan.LoginTest<br>Parameters: 李璇, 工商银行</td>
+<td></td>
+<td>40</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.tixianshenqing()'><b>tixianshenqing</b><br>Test class: lixuan.LoginTest<br>Parameters: lixuan, 工商银行</td>
+<td></td>
+<td>36</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.tixianshenqing()'><b>tixianshenqing</b><br>Test class: lixuan.LoginTest<br>Parameters: 李璇, &**（</td>
+<td></td>
+<td>34</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.tixianshenqing()'><b>tixianshenqing</b><br>Test class: lixuan.LoginTest<br>Parameters: 李璇, hello</td>
+<td></td>
+<td>35</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.tubiao()'><b>tubiao</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>33</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.wodedingdan()'><b>wodedingdan</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>10</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.wodejifen()'><b>wodejifen</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>10</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='lixuan.LoginTest.wodeyouhuiquan()'><b>wodeyouhuiquan</b><br>Test class: lixuan.LoginTest</td>
+<td></td>
+<td>10</td>
+<td>lixuan.LoginTest@4f51b3e0</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.xitong()'><b>xitong</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>7</td>
+<td>guoxiaoli.Demo1@1e4a7dd4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='azhouqianqian.Login_Test.test_login6()'><b>test_login6</b><br>Test class: azhouqianqian.Login_Test</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
+Caused by: java.lang.NullPointerException
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:61)
+	at azhouqianqian.Login_Test.createData6(Login_Test.java:139)
+	... 20 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1270132215", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1270132215'><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: java.lang.NullPointerException
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:61)
+	at azhouqianqian.Login_Test.createData6(Login_Test.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 20 more
+</pre></div></td>
+<td>0</td>
+<td>azhouqianqian.Login_Test@1ad282e0</td></tr>
+</table><p>
+</body>
+</html>
