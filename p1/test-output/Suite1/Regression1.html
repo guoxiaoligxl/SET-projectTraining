@@ -1,0 +1,490 @@
+<html>
+<head>
+<title>TestNG:  Regression1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/51</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 17 10:21:47 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>83 seconds (83789 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='guoxiaoli.Demo.doBeforeClass()'><b>doBeforeClass</b><br>Test class: guoxiaoli.Demo</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.webtest.core.BaseTest.newWebDriver(BaseTest.java:49)
+	at com.webtest.core.BaseTest.doBeforeClass(BaseTest.java:74)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1314838582", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1314838582'><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.webtest.core.BaseTest.newWebDriver(BaseTest.java:49)
+	at com.webtest.core.BaseTest.doBeforeClass(BaseTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='guoxiaoli.Demo1.doBeforeClass()'><b>doBeforeClass</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.login1()'><b>login1</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.login1()'><b>login1</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.login1()'><b>login1</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.login1()'><b>login1</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.login1()'><b>login1</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.login1()'><b>login1</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.login1()'><b>login1</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.doAfterMethod()'><b>doAfterMethod</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.doAfterMethod()'><b>doAfterMethod</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 小说, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 文学, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 历史, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 传记, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 青春, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 励志, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 社科, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 心理, 2</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 经济, 2</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.addarticle()'><b>addarticle</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 管理, 2</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.backstage()'><b>backstage</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.bagbuy()'><b>bagbuy</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.bagcart()'><b>bagcart</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.db()'><b>db</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.delivery()'><b>delivery</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 自取, 10, 5公斤, 5, 1, 顾客到店自取</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.delivery()'><b>delivery</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 他人代取, 15, 6公斤, 6, 2, 由快递站人员代取</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.delivery()'><b>delivery</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 送货上门, 20, 7公斤, 7, 1, 由工作人员将用户订购的商品送货到家</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.foodbuy()'><b>foodbuy</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.foodcart()'><b>foodcart</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.freight()'><b>freight</b><br>Test class: guoxiaoli.Demo1<br>Parameters: VANCL, 凡客配送, http://www.vancl.com, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.freight()'><b>freight</b><br>Test class: guoxiaoli.Demo1<br>Parameters: DTW, 大田物流, http://www.dtw.com.cn, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.freight()'><b>freight</b><br>Test class: guoxiaoli.Demo1<br>Parameters: POST, 挂号信, http://www.chinapost.com.cn, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.freight()'><b>freight</b><br>Test class: guoxiaoli.Demo1<br>Parameters: GSD, 共速达, http://www.gongsuda.com, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.freight()'><b>freight</b><br>Test class: guoxiaoli.Demo1<br>Parameters: HOAU, 华宇物流, http://www.hoau.net, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.freight()'><b>freight</b><br>Test class: guoxiaoli.Demo1<br>Parameters: CNEX, 佳吉快运, http://www.jiaji.com, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.freight()'><b>freight</b><br>Test class: guoxiaoli.Demo1<br>Parameters: JIAYI, 佳怡物流, http://www.jiayi56.com, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.jiajubuy()'><b>jiajubuy</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo.jiajucart()'><b>jiajucart</b><br>Test class: guoxiaoli.Demo</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo@4b9e255</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.login()'><b>login</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.netset()'><b>netset</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setback()'><b>setback</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setnav()'><b>setnav</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setpassowrd()'><b>setpassowrd</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 12345678, 12345678</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setpassowrd()'><b>setpassowrd</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 12345679asd, 12345679asd</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setpassowrd()'><b>setpassowrd</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 12345680zxc#, 12345680zxc#</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setpassowrd()'><b>setpassowrd</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 123456, 123456</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setpassowrd()'><b>setpassowrd</b><br>Test class: guoxiaoli.Demo1<br>Parameters: qwAzfgdfcg, qwAzfgdfcg</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setpassowrd()'><b>setpassowrd</b><br>Test class: guoxiaoli.Demo1<br>Parameters: ADF, ADF</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setpassowrd()'><b>setpassowrd</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 123456, 123456</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setquit()'><b>setquit</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.setshop()'><b>setshop</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 师大, D:\\pic\\one.jpg, 北京市, 市辖区, 西城区, 新华大街, 123455, 15215215215, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 科大, D:\\pic\\second.jpg, 北京市, 市辖区, 东城区, 新华大街, 123456, 15215215216, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 医大, D:\\pic\\third.jpg, 北京市, 市辖区, 朝阳区, 新华大街, 123457, 15215215217, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 北大, D:\\pic\\forth.jpg, 北京市, 市辖区, 海淀区, 新华大街, 123458, 15215215218, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 师大, D:\\pic\\fifth.jpg, 天津市, 市辖区, 和平区, 裕华大街, 123459, 15215215219, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 科大, D:\\pic\\sixth.jpg, 天津市, 市辖区, 河西区, 裕华大街, 123451, 15215215220, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: 医大, D:\\pic\\seventh.jpg, 天津市, 市辖区, 河东区, 裕华大街, 123452, 15215215221, 1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: asd, D:\\pic\\seventh.jpg, 河北省, 石家庄市, 长安区, 建设大街, 123453, 15215215222, 2</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.takeself()'><b>takeself</b><br>Test class: guoxiaoli.Demo1<br>Parameters: qwe, D:\\pic\\sixth.jpg, 河北省, 石家庄市, 桥西区, 平安大街, 123454, 15215215223, 3</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+<tr>
+<td title='guoxiaoli.Demo1.xitong()'><b>xitong</b><br>Test class: guoxiaoli.Demo1</td>
+<td></td>
+<td>0</td>
+<td>guoxiaoli.Demo1@5e57643e</td></tr>
+</table><p>
+</body>
+</html>

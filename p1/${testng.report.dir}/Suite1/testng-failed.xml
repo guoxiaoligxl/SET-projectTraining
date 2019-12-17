@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test name="Regression1">
+    <classes>
+      <class name="guoxiaoli.Demo"/>
+      <class name="guoxiaoli.Demo1"/>
+      <class name="lixuan.LoginTest"/>
+      <class name="zhangfan.BackStageTest"/>
+      <class name="azhouqianqian.BackgroundTest"/>
+      <class name="azhouqianqian.ExchangePoints"/>
+      <class name="azhouqianqian.HomeElectricity"/>
+      <class name="azhouqianqian.Login_Test"/>
+      <class name="azhouqianqian.Pingtuan"/>
+    </classes>
+  </test> <!-- Regression1 -->
+  <test name="Regression1(failed)">
+    <classes>
+      <class name="zhangfan.BackStageTest">
+        <methods>
+          <include name="addBrandClassification"/>
+          <include name="testBatchDeletionModelList"/>
+          <include name="doAfterMethod"/>
+          <include name="testLotPending"/>
+          <include name="addBrandList"/>
+          <include name="testAddGoods"/>
+          <include name="testAddSizeList"/>
+          <include name="testBackstageLogin"/>
+          <include name="testBatchOperation"/>
+          <include name="testShareGoods"/>
+          <include name="testEdit"/>
+          <include name="addClassificationList"/>
+          <include name="doBeforeClass"/>
+          <include name="addModelList"/>
+        </methods>
+      </class> <!-- zhangfan.BackStageTest -->
+      <class name="guoxiaoli.Demo1">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="addarticle"/>
+          <include name="freight"/>
+          <include name="doBeforeClass"/>
+          <include name="delivery"/>
+          <include name="setpassowrd"/>
+          <include name="takeself"/>
+        </methods>
+      </class> <!-- guoxiaoli.Demo1 -->
+      <class name="azhouqianqian.HomeElectricity">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- azhouqianqian.HomeElectricity -->
+      <class name="azhouqianqian.BackgroundTest">
+        <methods>
+          <include name="test_add3"/>
+          <include name="doAfterMethod"/>
+          <include name="testindent1"/>
+          <include name="testindent2"/>
+          <include name="backLogin"/>
+          <include name="test_add5"/>
+          <include name="testindent3"/>
+          <include name="testindent4"/>
+          <include name="doBeforeClass"/>
+          <include name="testindent5"/>
+        </methods>
+      </class> <!-- azhouqianqian.BackgroundTest -->
+      <class name="lixuan.LoginTest">
+        <methods>
+          <include name="opendian"/>
+          <include name="login"/>
+          <include name="doAfterMethod"/>
+          <include name="myselfjianyi"/>
+          <include name="fapiaoguanli"/>
+          <include name="exchangepw"/>
+          <include name="doBeforeClass"/>
+          <include name="myselfaddaddress"/>
+          <include name="tixianshenqing"/>
+        </methods>
+      </class> <!-- lixuan.LoginTest -->
+      <class name="azhouqianqian.ExchangePoints">
+        <methods>
+          <include name="test2"/>
+          <include name="doAfterMethod"/>
+          <include name="test5"/>
+          <include name="test3"/>
+          <include name="test1"/>
+          <include name="test4"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- azhouqianqian.ExchangePoints -->
+      <class name="azhouqianqian.Login_Test">
+        <methods>
+          <include name="test_login3"/>
+          <include name="test_login4"/>
+          <include name="test_login1"/>
+          <include name="test_login2"/>
+          <include name="doAfterMethod"/>
+          <include name="test_login7"/>
+          <include name="doBeforeClass"/>
+          <include name="test_login5"/>
+          <include name="test_login6"/>
+        </methods>
+      </class> <!-- azhouqianqian.Login_Test -->
+      <class name="guoxiaoli.Demo">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="login1"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- guoxiaoli.Demo -->
+      <class name="azhouqianqian.Pingtuan">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="doBeforeClass"/>
+          <include name="test_buy"/>
+        </methods>
+      </class> <!-- azhouqianqian.Pingtuan -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

@@ -1,0 +1,2545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="29" failed="13" total="106" passed="64">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="2816527" started-at="2019-12-17T08:16:00Z" finished-at="2019-12-17T09:02:57Z">
+    <groups>
+    </groups>
+    <test name="Regression1" duration-ms="2816527" started-at="2019-12-17T08:16:00Z" finished-at="2019-12-17T09:02:57Z">
+      <class name="azhouqianqian.ExchangePoints">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:azhouqianqian.ExchangePoints@17d99928]" name="doBeforeClass" is-config="true" duration-ms="6998" started-at="2019-12-17T16:56:41Z" finished-at="2019-12-17T16:56:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="FAIL" signature="test1()[pri:0, instance:azhouqianqian.ExchangePoints@17d99928]" name="test1" duration-ms="7821" started-at="2019-12-17T16:56:48Z" finished-at="2019-12-17T16:56:56Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.ExchangePoints.test1(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="FAIL" signature="test2()[pri:0, instance:azhouqianqian.ExchangePoints@17d99928]" name="test2" duration-ms="21798" started-at="2019-12-17T16:56:56Z" finished-at="2019-12-17T16:57:18Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.ExchangePoints.test2(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="FAIL" signature="test3()[pri:0, instance:azhouqianqian.ExchangePoints@17d99928]" name="test3" duration-ms="8628" started-at="2019-12-17T16:57:18Z" finished-at="2019-12-17T16:57:26Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.ExchangePoints.test3(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="FAIL" signature="test4()[pri:0, instance:azhouqianqian.ExchangePoints@17d99928]" name="test4" duration-ms="8350" started-at="2019-12-17T16:57:26Z" finished-at="2019-12-17T16:57:35Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.ExchangePoints.test4(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="FAIL" signature="test5()[pri:0, instance:azhouqianqian.ExchangePoints@17d99928]" name="test5" duration-ms="7692" started-at="2019-12-17T16:57:35Z" finished-at="2019-12-17T16:57:43Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.ExchangePoints.test5(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:azhouqianqian.ExchangePoints@17d99928]" name="doAfterMethod" is-config="true" duration-ms="2812" started-at="2019-12-17T16:57:43Z" finished-at="2019-12-17T16:57:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- azhouqianqian.ExchangePoints -->
+      <class name="zhangfan.BackStageTest">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="doBeforeClass" is-config="true" duration-ms="6982" started-at="2019-12-17T16:43:54Z" finished-at="2019-12-17T16:44:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="addModelList(java.lang.String)[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="addModelList" duration-ms="0" started-at="2019-12-17T16:44:01Z" data-provider="modelName" finished-at="2019-12-17T16:44:01Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData4(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addModelList -->
+        <test-method status="SKIP" signature="addBrandClassification(java.lang.String)[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="addBrandClassification" duration-ms="0" started-at="2019-12-17T16:44:01Z" data-provider="classificationList" finished-at="2019-12-17T16:44:01Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData7(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBrandClassification -->
+        <test-method status="SKIP" signature="addClassificationList(java.lang.String)[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="addClassificationList" duration-ms="0" started-at="2019-12-17T16:44:01Z" data-provider="goodsClassificationList" finished-at="2019-12-17T16:44:01Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData8(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addClassificationList -->
+        <test-method status="SKIP" signature="addBrandList(java.lang.String, java.lang.String)[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="addBrandList" duration-ms="0" started-at="2019-12-17T16:44:01Z" data-provider="brandList" finished-at="2019-12-17T16:44:01Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData6(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBrandList -->
+        <test-method status="SKIP" signature="testAddGoods(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testAddGoods" duration-ms="0" started-at="2019-12-17T16:44:01Z" data-provider="addGoods" finished-at="2019-12-17T16:44:01Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData1(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddGoods -->
+        <test-method status="SKIP" signature="testAddSizeList(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testAddSizeList" duration-ms="0" started-at="2019-12-17T16:44:01Z" data-provider="sizeList" finished-at="2019-12-17T16:44:01Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData5(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddSizeList -->
+        <test-method status="SKIP" signature="testBatchDeletionModelList(java.lang.String, java.lang.String)[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testBatchDeletionModelList" duration-ms="0" started-at="2019-12-17T16:44:01Z" data-provider="modelId" finished-at="2019-12-17T16:44:01Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData3(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchDeletionModelList -->
+        <test-method status="SKIP" signature="testBatchOperation(java.lang.String, java.lang.String)[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testBatchOperation" duration-ms="0" started-at="2019-12-17T16:44:01Z" data-provider="goodsId" finished-at="2019-12-17T16:44:01Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData2(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchOperation -->
+        <test-method status="PASS" signature="testBackstageLogin()[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testBackstageLogin" is-config="true" duration-ms="51756" started-at="2019-12-17T16:44:01Z" finished-at="2019-12-17T16:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBackstageLogin -->
+        <test-method status="PASS" signature="testClassificationList()[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testClassificationList" duration-ms="11028" started-at="2019-12-17T16:44:53Z" finished-at="2019-12-17T16:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClassificationList -->
+        <test-method status="PASS" signature="testBackstageLogin()[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testBackstageLogin" is-config="true" duration-ms="12766" started-at="2019-12-17T16:45:04Z" finished-at="2019-12-17T16:45:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBackstageLogin -->
+        <test-method status="SKIP" signature="testLotPending(java.lang.String, java.lang.String)[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testLotPending" duration-ms="0" started-at="2019-12-17T16:45:04Z" data-provider="goodsId" finished-at="2019-12-17T16:45:04Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData2(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLotPending -->
+        <test-method status="SKIP" signature="testEdit(java.lang.String, java.lang.String)[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testEdit" duration-ms="0" started-at="2019-12-17T16:45:04Z" data-provider="goodsId" finished-at="2019-12-17T16:45:04Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData2(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEdit -->
+        <test-method status="SKIP" signature="testShareGoods(java.lang.String, java.lang.String)[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testShareGoods" duration-ms="0" started-at="2019-12-17T16:45:04Z" data-provider="goodsId" finished-at="2019-12-17T16:45:04Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData2(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testShareGoods -->
+        <test-method status="PASS" signature="testViewBrandClassification()[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testViewBrandClassification" duration-ms="11341" started-at="2019-12-17T16:45:16Z" finished-at="2019-12-17T16:45:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewBrandClassification -->
+        <test-method status="PASS" signature="testBackstageLogin()[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testBackstageLogin" is-config="true" duration-ms="12519" started-at="2019-12-17T16:45:28Z" finished-at="2019-12-17T16:45:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBackstageLogin -->
+        <test-method status="PASS" signature="testViewBrandList()[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testViewBrandList" duration-ms="10763" started-at="2019-12-17T16:45:40Z" finished-at="2019-12-17T16:45:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewBrandList -->
+        <test-method status="PASS" signature="testBackstageLogin()[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testBackstageLogin" is-config="true" duration-ms="13757" started-at="2019-12-17T16:45:51Z" finished-at="2019-12-17T16:46:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBackstageLogin -->
+        <test-method status="PASS" signature="testViewModelList()[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testViewModelList" duration-ms="11576" started-at="2019-12-17T16:46:05Z" finished-at="2019-12-17T16:46:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewModelList -->
+        <test-method status="PASS" signature="testBackstageLogin()[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testBackstageLogin" is-config="true" duration-ms="12985" started-at="2019-12-17T16:46:16Z" finished-at="2019-12-17T16:46:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBackstageLogin -->
+        <test-method status="PASS" signature="testViewSizeList()[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="testViewSizeList" duration-ms="11482" started-at="2019-12-17T16:46:29Z" finished-at="2019-12-17T16:46:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewSizeList -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:zhangfan.BackStageTest@7cdbc5d3]" name="doAfterMethod" is-config="true" duration-ms="1874" started-at="2019-12-17T16:46:41Z" finished-at="2019-12-17T16:46:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- zhangfan.BackStageTest -->
+      <class name="lixuan.LoginTest">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="doBeforeClass" is-config="true" duration-ms="6608" started-at="2019-12-17T16:32:52Z" finished-at="2019-12-17T16:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="56026" started-at="2019-12-17T16:32:59Z" finished-at="2019-12-17T16:33:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="wodedingdan()[pri:2, instance:lixuan.LoginTest@47fd17e3]" name="wodedingdan" duration-ms="9227" started-at="2019-12-17T16:33:55Z" finished-at="2019-12-17T16:34:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wodedingdan -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8665" started-at="2019-12-17T16:34:04Z" finished-at="2019-12-17T16:34:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="wodejifen()[pri:3, instance:lixuan.LoginTest@47fd17e3]" name="wodejifen" duration-ms="10524" started-at="2019-12-17T16:34:12Z" finished-at="2019-12-17T16:34:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wodejifen -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="9026" started-at="2019-12-17T16:34:23Z" finished-at="2019-12-17T16:34:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="wodeyouhuiquan()[pri:4, instance:lixuan.LoginTest@47fd17e3]" name="wodeyouhuiquan" duration-ms="10345" started-at="2019-12-17T16:34:32Z" finished-at="2019-12-17T16:34:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wodeyouhuiquan -->
+        <test-method status="SKIP" signature="myselfjianyi(java.lang.String, java.lang.String)[pri:5, instance:lixuan.LoginTest@47fd17e3]" name="myselfjianyi" duration-ms="0" started-at="2019-12-17T16:34:42Z" data-provider="test1" finished-at="2019-12-17T16:34:42Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at lixuan.LoginTest.createData1(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myselfjianyi -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="9264" started-at="2019-12-17T16:34:42Z" finished-at="2019-12-17T16:34:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="shouhoufuwu()[pri:6, instance:lixuan.LoginTest@47fd17e3]" name="shouhoufuwu" duration-ms="22339" started-at="2019-12-17T16:34:52Z" finished-at="2019-12-17T16:35:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouhoufuwu -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="9831" started-at="2019-12-17T16:35:14Z" finished-at="2019-12-17T16:35:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="shangpinzixun()[pri:7, instance:lixuan.LoginTest@47fd17e3]" name="shangpinzixun" duration-ms="9535" started-at="2019-12-17T16:35:24Z" finished-at="2019-12-17T16:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shangpinzixun -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8624" started-at="2019-12-17T16:35:33Z" finished-at="2019-12-17T16:35:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="shangpinpingjia()[pri:8, instance:lixuan.LoginTest@47fd17e3]" name="shangpinpingjia" duration-ms="17136" started-at="2019-12-17T16:35:42Z" finished-at="2019-12-17T16:35:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shangpinpingjia -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8373" started-at="2019-12-17T16:35:59Z" finished-at="2019-12-17T16:36:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="duanxinxi()[pri:9, instance:lixuan.LoginTest@47fd17e3]" name="duanxinxi" duration-ms="9177" started-at="2019-12-17T16:36:07Z" finished-at="2019-12-17T16:36:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- duanxinxi -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8643" started-at="2019-12-17T16:36:17Z" finished-at="2019-12-17T16:36:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="shoucangjia()[pri:10, instance:lixuan.LoginTest@47fd17e3]" name="shoucangjia" duration-ms="10261" started-at="2019-12-17T16:36:25Z" finished-at="2019-12-17T16:36:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shoucangjia -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8610" started-at="2019-12-17T16:36:36Z" finished-at="2019-12-17T16:36:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="jiaoyijilu()[pri:11, instance:lixuan.LoginTest@47fd17e3]" name="jiaoyijilu" duration-ms="11319" started-at="2019-12-17T16:36:44Z" finished-at="2019-12-17T16:36:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jiaoyijilu -->
+        <test-method status="SKIP" signature="tixianshenqing(java.lang.String, java.lang.String)[pri:12, instance:lixuan.LoginTest@47fd17e3]" name="tixianshenqing" duration-ms="0" started-at="2019-12-17T16:36:56Z" data-provider="test2" finished-at="2019-12-17T16:36:56Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at lixuan.LoginTest.createData2(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tixianshenqing -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8359" started-at="2019-12-17T16:36:56Z" finished-at="2019-12-17T16:37:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="myselfaddaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:13, instance:lixuan.LoginTest@47fd17e3]" name="myselfaddaddress" duration-ms="0" started-at="2019-12-17T16:36:56Z" data-provider="test3" finished-at="2019-12-17T16:36:56Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at lixuan.LoginTest.createData3(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myselfaddaddress -->
+        <test-method status="PASS" signature="deleteaddress()[pri:14, instance:lixuan.LoginTest@47fd17e3]" name="deleteaddress" duration-ms="20183" started-at="2019-12-17T16:37:04Z" finished-at="2019-12-17T16:37:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteaddress -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8226" started-at="2019-12-17T16:37:24Z" finished-at="2019-12-17T16:37:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="myselfchangeaddress()[pri:15, instance:lixuan.LoginTest@47fd17e3]" name="myselfchangeaddress" duration-ms="19738" started-at="2019-12-17T16:37:32Z" finished-at="2019-12-17T16:37:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myselfchangeaddress -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8070" started-at="2019-12-17T16:37:52Z" finished-at="2019-12-17T16:38:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="fapiaoguanli(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:16, instance:lixuan.LoginTest@47fd17e3]" name="fapiaoguanli" duration-ms="0" started-at="2019-12-17T16:37:52Z" data-provider="test4" finished-at="2019-12-17T16:37:52Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at lixuan.LoginTest.createData4(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fapiaoguanli -->
+        <test-method status="PASS" signature="deletefapiao()[pri:17, instance:lixuan.LoginTest@47fd17e3]" name="deletefapiao" duration-ms="20788" started-at="2019-12-17T16:38:00Z" finished-at="2019-12-17T16:38:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletefapiao -->
+        <test-method status="SKIP" signature="exchangepw(java.lang.String, java.lang.String, java.lang.String)[pri:18, instance:lixuan.LoginTest@47fd17e3]" name="exchangepw" duration-ms="0" started-at="2019-12-17T16:38:21Z" data-provider="test5" finished-at="2019-12-17T16:38:21Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at lixuan.LoginTest.createData5(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exchangepw -->
+        <test-method status="SKIP" signature="opendian(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:19, instance:lixuan.LoginTest@47fd17e3]" name="opendian" duration-ms="0" started-at="2019-12-17T16:38:21Z" data-provider="test6" finished-at="2019-12-17T16:38:21Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at lixuan.LoginTest.createData6(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opendian -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8021" started-at="2019-12-17T16:38:21Z" finished-at="2019-12-17T16:38:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="shangjiaguanli()[pri:20, instance:lixuan.LoginTest@47fd17e3]" name="shangjiaguanli" duration-ms="16187" started-at="2019-12-17T16:38:29Z" finished-at="2019-12-17T16:38:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shangjiaguanli -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8132" started-at="2019-12-17T16:38:45Z" finished-at="2019-12-17T16:38:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="search()[pri:21, instance:lixuan.LoginTest@47fd17e3]" name="search" duration-ms="4753" started-at="2019-12-17T16:38:53Z" finished-at="2019-12-17T16:38:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8268" started-at="2019-12-17T16:38:58Z" finished-at="2019-12-17T16:39:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="add1()[pri:22, instance:lixuan.LoginTest@47fd17e3]" name="add1" duration-ms="36998" started-at="2019-12-17T16:39:06Z" finished-at="2019-12-17T16:39:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add1 -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8691" started-at="2019-12-17T16:39:43Z" finished-at="2019-12-17T16:39:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="jiesuan()[pri:23, instance:lixuan.LoginTest@47fd17e3]" name="jiesuan" duration-ms="23772" started-at="2019-12-17T16:39:52Z" finished-at="2019-12-17T16:40:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jiesuan -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8447" started-at="2019-12-17T16:40:16Z" finished-at="2019-12-17T16:40:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="add2()[pri:24, instance:lixuan.LoginTest@47fd17e3]" name="add2" duration-ms="15107" started-at="2019-12-17T16:40:24Z" finished-at="2019-12-17T16:40:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add2 -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8750" started-at="2019-12-17T16:40:39Z" finished-at="2019-12-17T16:40:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="qingkong()[pri:25, instance:lixuan.LoginTest@47fd17e3]" name="qingkong" duration-ms="14538" started-at="2019-12-17T16:40:48Z" finished-at="2019-12-17T16:41:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- qingkong -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="8592" started-at="2019-12-17T16:41:03Z" finished-at="2019-12-17T16:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="jixugouwu()[pri:26, instance:lixuan.LoginTest@47fd17e3]" name="jixugouwu" duration-ms="10364" started-at="2019-12-17T16:41:11Z" finished-at="2019-12-17T16:41:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jixugouwu -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="9054" started-at="2019-12-17T16:41:21Z" finished-at="2019-12-17T16:41:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="allshangpn()[pri:27, instance:lixuan.LoginTest@47fd17e3]" name="allshangpn" duration-ms="86789" started-at="2019-12-17T16:41:31Z" finished-at="2019-12-17T16:42:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allshangpn -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="9082" started-at="2019-12-17T16:42:57Z" finished-at="2019-12-17T16:43:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tubiao()[pri:28, instance:lixuan.LoginTest@47fd17e3]" name="tubiao" duration-ms="30053" started-at="2019-12-17T16:43:06Z" finished-at="2019-12-17T16:43:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tubiao -->
+        <test-method status="PASS" signature="login()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="login" is-config="true" duration-ms="9124" started-at="2019-12-17T16:43:36Z" finished-at="2019-12-17T16:43:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="foodcart()[pri:29, instance:lixuan.LoginTest@47fd17e3]" name="foodcart" duration-ms="5357" started-at="2019-12-17T16:43:46Z" finished-at="2019-12-17T16:43:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- foodcart -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:lixuan.LoginTest@47fd17e3]" name="doAfterMethod" is-config="true" duration-ms="2826" started-at="2019-12-17T16:43:51Z" finished-at="2019-12-17T16:43:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- lixuan.LoginTest -->
+      <class name="guoxiaoli.Demo">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:guoxiaoli.Demo@7006c658]" name="doBeforeClass" is-config="true" duration-ms="17421" started-at="2019-12-17T16:16:00Z" finished-at="2019-12-17T16:16:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:guoxiaoli.Demo@7006c658]" name="login1" is-config="true" duration-ms="62829" started-at="2019-12-17T16:16:18Z" finished-at="2019-12-17T16:17:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="foodcart()[pri:31, instance:guoxiaoli.Demo@7006c658]" name="foodcart" duration-ms="174389" started-at="2019-12-17T16:17:21Z" finished-at="2019-12-17T16:20:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- foodcart -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:guoxiaoli.Demo@7006c658]" name="login1" is-config="true" duration-ms="22829" started-at="2019-12-17T16:20:15Z" finished-at="2019-12-17T16:20:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="foodbuy()[pri:32, instance:guoxiaoli.Demo@7006c658]" name="foodbuy" duration-ms="35039" started-at="2019-12-17T16:20:38Z" finished-at="2019-12-17T16:21:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- foodbuy -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:guoxiaoli.Demo@7006c658]" name="login1" is-config="true" duration-ms="11636" started-at="2019-12-17T16:21:13Z" finished-at="2019-12-17T16:21:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="jiajucart()[pri:33, instance:guoxiaoli.Demo@7006c658]" name="jiajucart" duration-ms="327500" started-at="2019-12-17T16:21:25Z" finished-at="2019-12-17T16:26:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jiajucart -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:guoxiaoli.Demo@7006c658]" name="login1" is-config="true" duration-ms="23638" started-at="2019-12-17T16:26:52Z" finished-at="2019-12-17T16:27:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="jiajubuy()[pri:34, instance:guoxiaoli.Demo@7006c658]" name="jiajubuy" duration-ms="41554" started-at="2019-12-17T16:27:16Z" finished-at="2019-12-17T16:27:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jiajubuy -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:guoxiaoli.Demo@7006c658]" name="login1" is-config="true" duration-ms="23137" started-at="2019-12-17T16:27:57Z" finished-at="2019-12-17T16:28:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="bagcart()[pri:35, instance:guoxiaoli.Demo@7006c658]" name="bagcart" duration-ms="78063" started-at="2019-12-17T16:28:20Z" finished-at="2019-12-17T16:29:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bagcart -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:guoxiaoli.Demo@7006c658]" name="login1" is-config="true" duration-ms="23473" started-at="2019-12-17T16:29:39Z" finished-at="2019-12-17T16:30:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="bagbuy()[pri:36, instance:guoxiaoli.Demo@7006c658]" name="bagbuy" duration-ms="36361" started-at="2019-12-17T16:30:02Z" finished-at="2019-12-17T16:30:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bagbuy -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:guoxiaoli.Demo@7006c658]" name="login1" is-config="true" duration-ms="23527" started-at="2019-12-17T16:30:38Z" finished-at="2019-12-17T16:31:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="backstage()[pri:37, instance:guoxiaoli.Demo@7006c658]" name="backstage" duration-ms="10763" started-at="2019-12-17T16:31:02Z" finished-at="2019-12-17T16:31:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backstage -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:guoxiaoli.Demo@7006c658]" name="doAfterMethod" is-config="true" duration-ms="3484" started-at="2019-12-17T16:31:13Z" finished-at="2019-12-17T16:31:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- guoxiaoli.Demo -->
+      <class name="guoxiaoli.Demo1">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:guoxiaoli.Demo1@34033bd0]" name="doBeforeClass" is-config="true" duration-ms="12528" started-at="2019-12-17T16:31:16Z" finished-at="2019-12-17T16:31:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="login()[pri:41, instance:guoxiaoli.Demo1@34033bd0]" name="login" duration-ms="10950" started-at="2019-12-17T16:31:29Z" finished-at="2019-12-17T16:31:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="xitong()[pri:42, instance:guoxiaoli.Demo1@34033bd0]" name="xitong" duration-ms="7354" started-at="2019-12-17T16:31:40Z" finished-at="2019-12-17T16:31:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xitong -->
+        <test-method status="PASS" signature="netset()[pri:43, instance:guoxiaoli.Demo1@34033bd0]" name="netset" duration-ms="13778" started-at="2019-12-17T16:31:47Z" finished-at="2019-12-17T16:32:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- netset -->
+        <test-method status="SKIP" signature="freight(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:45, instance:guoxiaoli.Demo1@34033bd0]" name="freight" duration-ms="0" started-at="2019-12-17T16:32:02Z" data-provider="test2" finished-at="2019-12-17T16:32:02Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at guoxiaoli.Demo1.createData2(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freight -->
+        <test-method status="SKIP" signature="delivery(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:44, instance:guoxiaoli.Demo1@34033bd0]" name="delivery" duration-ms="0" started-at="2019-12-17T16:32:02Z" data-provider="test1" finished-at="2019-12-17T16:32:02Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at guoxiaoli.Demo1.createData1(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delivery -->
+        <test-method status="PASS" signature="db()[pri:47, instance:guoxiaoli.Demo1@34033bd0]" name="db" duration-ms="7171" started-at="2019-12-17T16:32:02Z" finished-at="2019-12-17T16:32:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- db -->
+        <test-method status="SKIP" signature="takeself(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:46, instance:guoxiaoli.Demo1@34033bd0]" name="takeself" duration-ms="0" started-at="2019-12-17T16:32:02Z" data-provider="test3" finished-at="2019-12-17T16:32:02Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at guoxiaoli.Demo1.createData3(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeself -->
+        <test-method status="SKIP" signature="addarticle(java.lang.String, java.lang.String)[pri:48, instance:guoxiaoli.Demo1@34033bd0]" name="addarticle" duration-ms="0" started-at="2019-12-17T16:32:09Z" data-provider="test4" finished-at="2019-12-17T16:32:09Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at guoxiaoli.Demo1.createData4(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addarticle -->
+        <test-method status="PASS" signature="setback()[pri:50, instance:guoxiaoli.Demo1@34033bd0]" name="setback" duration-ms="8904" started-at="2019-12-17T16:32:09Z" finished-at="2019-12-17T16:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setback -->
+        <test-method status="SKIP" signature="setpassowrd(java.lang.String, java.lang.String)[pri:49, instance:guoxiaoli.Demo1@34033bd0]" name="setpassowrd" duration-ms="0" started-at="2019-12-17T16:32:09Z" data-provider="test5" finished-at="2019-12-17T16:32:09Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at guoxiaoli.Demo1.createData(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setpassowrd -->
+        <test-method status="PASS" signature="setshop()[pri:51, instance:guoxiaoli.Demo1@34033bd0]" name="setshop" duration-ms="8860" started-at="2019-12-17T16:32:18Z" finished-at="2019-12-17T16:32:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setshop -->
+        <test-method status="PASS" signature="setnav()[pri:52, instance:guoxiaoli.Demo1@34033bd0]" name="setnav" duration-ms="16884" started-at="2019-12-17T16:32:27Z" finished-at="2019-12-17T16:32:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setnav -->
+        <test-method status="PASS" signature="setquit()[pri:53, instance:guoxiaoli.Demo1@34033bd0]" name="setquit" duration-ms="6264" started-at="2019-12-17T16:32:43Z" finished-at="2019-12-17T16:32:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setquit -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:guoxiaoli.Demo1@34033bd0]" name="doAfterMethod" is-config="true" duration-ms="2203" started-at="2019-12-17T16:32:50Z" finished-at="2019-12-17T16:32:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- guoxiaoli.Demo1 -->
+      <class name="azhouqianqian.BackgroundTest">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="doBeforeClass" is-config="true" duration-ms="7561" started-at="2019-12-17T16:46:43Z" finished-at="2019-12-17T16:46:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="14855" started-at="2019-12-17T16:46:50Z" finished-at="2019-12-17T16:47:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="PASS" signature="Show_list7()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="Show_list7" duration-ms="110271" started-at="2019-12-17T16:47:05Z" finished-at="2019-12-17T16:48:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Show_list7 -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="13011" started-at="2019-12-17T16:48:55Z" finished-at="2019-12-17T16:49:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="PASS" signature="testAll6()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="testAll6" duration-ms="7045" started-at="2019-12-17T16:49:08Z" finished-at="2019-12-17T16:49:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAll6 -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="13784" started-at="2019-12-17T16:49:15Z" finished-at="2019-12-17T16:49:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="PASS" signature="test_add1()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="test_add1" duration-ms="22636" started-at="2019-12-17T16:49:29Z" finished-at="2019-12-17T16:49:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_add1 -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="14026" started-at="2019-12-17T16:49:52Z" finished-at="2019-12-17T16:50:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="PASS" signature="test_add2()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="test_add2" duration-ms="34305" started-at="2019-12-17T16:50:06Z" finished-at="2019-12-17T16:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_add2 -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="13713" started-at="2019-12-17T16:50:40Z" finished-at="2019-12-17T16:50:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="FAIL" signature="test_add3()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="test_add3" duration-ms="14840" started-at="2019-12-17T16:50:54Z" finished-at="2019-12-17T16:51:09Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <button class="btn btn-default" type="button"> is not clickable at point (433,404) because another element <iframe src="about:blank"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-QMO9A9N', ip: '169.254.144.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15008, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67bb40fe-b47e-4fe1-8a4a-90acf00bf636]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="btn btn-default" type="button"> is not clickable at point (433,404) because another element <iframe src="about:blank"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-QMO9A9N', ip: '169.254.144.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15008, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67bb40fe-b47e-4fe1-8a4a-90acf00bf636
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:158)
+	at azhouqianqian.BackgroundTest.test_add3(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_add3 -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="13151" started-at="2019-12-17T16:51:09Z" finished-at="2019-12-17T16:51:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="PASS" signature="test_add4()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="test_add4" duration-ms="34381" started-at="2019-12-17T16:51:22Z" finished-at="2019-12-17T16:51:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_add4 -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="13347" started-at="2019-12-17T16:51:56Z" finished-at="2019-12-17T16:52:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="FAIL" signature="test_add5()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="test_add5" duration-ms="15169" started-at="2019-12-17T16:52:10Z" finished-at="2019-12-17T16:52:25Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <button class="btn btn-default" type="button"> is not clickable at point (433,316) because another element <iframe src="about:blank"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-QMO9A9N', ip: '169.254.144.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15008, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67bb40fe-b47e-4fe1-8a4a-90acf00bf636]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="btn btn-default" type="button"> is not clickable at point (433,316) because another element <iframe src="about:blank"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-QMO9A9N', ip: '169.254.144.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15008, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67bb40fe-b47e-4fe1-8a4a-90acf00bf636
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:158)
+	at azhouqianqian.BackgroundTest.test_add5(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_add5 -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="13782" started-at="2019-12-17T16:52:25Z" finished-at="2019-12-17T16:52:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="PASS" signature="test_add6()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="test_add6" duration-ms="28431" started-at="2019-12-17T16:52:39Z" finished-at="2019-12-17T16:53:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_add6 -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="13386" started-at="2019-12-17T16:53:07Z" finished-at="2019-12-17T16:53:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="PASS" signature="test_add7()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="test_add7" duration-ms="23885" started-at="2019-12-17T16:53:20Z" finished-at="2019-12-17T16:53:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_add7 -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="13944" started-at="2019-12-17T16:53:44Z" finished-at="2019-12-17T16:53:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="PASS" signature="test_show8()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="test_show8" duration-ms="11732" started-at="2019-12-17T16:53:58Z" finished-at="2019-12-17T16:54:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_show8 -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="13644" started-at="2019-12-17T16:54:10Z" finished-at="2019-12-17T16:54:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="FAIL" signature="testindent1()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="testindent1" duration-ms="17699" started-at="2019-12-17T16:54:24Z" finished-at="2019-12-17T16:54:41Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.BackgroundTest.testindent1(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testindent1 -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="13739" started-at="2019-12-17T16:54:41Z" finished-at="2019-12-17T16:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="FAIL" signature="testindent2()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="testindent2" duration-ms="14075" started-at="2019-12-17T16:54:55Z" finished-at="2019-12-17T16:55:09Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.BackgroundTest.testindent2(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testindent2 -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="13727" started-at="2019-12-17T16:55:09Z" finished-at="2019-12-17T16:55:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="FAIL" signature="testindent3()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="testindent3" duration-ms="13903" started-at="2019-12-17T16:55:23Z" finished-at="2019-12-17T16:55:37Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.BackgroundTest.testindent3(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testindent3 -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="13233" started-at="2019-12-17T16:55:37Z" finished-at="2019-12-17T16:55:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="FAIL" signature="testindent4()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="testindent4" duration-ms="17667" started-at="2019-12-17T16:55:50Z" finished-at="2019-12-17T16:56:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.BackgroundTest.testindent4(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testindent4 -->
+        <test-method status="PASS" signature="backLogin()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="backLogin" is-config="true" duration-ms="13410" started-at="2019-12-17T16:56:08Z" finished-at="2019-12-17T16:56:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backLogin -->
+        <test-method status="FAIL" signature="testindent5()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="testindent5" duration-ms="17793" started-at="2019-12-17T16:56:21Z" finished-at="2019-12-17T16:56:39Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.BackgroundTest.testindent5(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testindent5 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:azhouqianqian.BackgroundTest@3aa9e816]" name="doAfterMethod" is-config="true" duration-ms="2453" started-at="2019-12-17T16:56:39Z" finished-at="2019-12-17T16:56:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- azhouqianqian.BackgroundTest -->
+      <class name="azhouqianqian.Pingtuan">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:azhouqianqian.Pingtuan@6fffcba5]" name="doBeforeClass" is-config="true" duration-ms="6607" started-at="2019-12-17T17:00:37Z" finished-at="2019-12-17T17:00:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="FAIL" signature="test_buy()[pri:0, instance:azhouqianqian.Pingtuan@6fffcba5]" name="test_buy" duration-ms="61259" started-at="2019-12-17T17:00:44Z" finished-at="2019-12-17T17:01:45Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at azhouqianqian.Pingtuan.test_buy(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_buy -->
+        <test-method status="PASS" signature="test_jump1()[pri:0, instance:azhouqianqian.Pingtuan@6fffcba5]" name="test_jump1" duration-ms="17157" started-at="2019-12-17T17:01:45Z" finished-at="2019-12-17T17:02:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_jump1 -->
+        <test-method status="PASS" signature="test_jump2()[pri:0, instance:azhouqianqian.Pingtuan@6fffcba5]" name="test_jump2" duration-ms="18999" started-at="2019-12-17T17:02:02Z" finished-at="2019-12-17T17:02:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_jump2 -->
+        <test-method status="PASS" signature="test_jump3()[pri:0, instance:azhouqianqian.Pingtuan@6fffcba5]" name="test_jump3" duration-ms="16992" started-at="2019-12-17T17:02:21Z" finished-at="2019-12-17T17:02:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_jump3 -->
+        <test-method status="PASS" signature="test_jump4()[pri:0, instance:azhouqianqian.Pingtuan@6fffcba5]" name="test_jump4" duration-ms="16882" started-at="2019-12-17T17:02:38Z" finished-at="2019-12-17T17:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_jump4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:azhouqianqian.Pingtuan@6fffcba5]" name="doAfterMethod" is-config="true" duration-ms="1743" started-at="2019-12-17T17:02:55Z" finished-at="2019-12-17T17:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- azhouqianqian.Pingtuan -->
+      <class name="azhouqianqian.HomeElectricity">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:azhouqianqian.HomeElectricity@3834d63f]" name="doBeforeClass" is-config="true" duration-ms="6249" started-at="2019-12-17T16:57:45Z" finished-at="2019-12-17T16:57:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="test_jump1()[pri:0, instance:azhouqianqian.HomeElectricity@3834d63f]" name="test_jump1" duration-ms="11519" started-at="2019-12-17T16:57:52Z" finished-at="2019-12-17T16:58:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_jump1 -->
+        <test-method status="PASS" signature="test_jump2()[pri:0, instance:azhouqianqian.HomeElectricity@3834d63f]" name="test_jump2" duration-ms="6618" started-at="2019-12-17T16:58:03Z" finished-at="2019-12-17T16:58:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_jump2 -->
+        <test-method status="PASS" signature="test_jump3()[pri:0, instance:azhouqianqian.HomeElectricity@3834d63f]" name="test_jump3" duration-ms="5771" started-at="2019-12-17T16:58:10Z" finished-at="2019-12-17T16:58:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_jump3 -->
+        <test-method status="PASS" signature="test_jump4()[pri:0, instance:azhouqianqian.HomeElectricity@3834d63f]" name="test_jump4" duration-ms="5645" started-at="2019-12-17T16:58:15Z" finished-at="2019-12-17T16:58:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_jump4 -->
+        <test-method status="PASS" signature="test_order1()[pri:0, instance:azhouqianqian.HomeElectricity@3834d63f]" name="test_order1" duration-ms="21800" started-at="2019-12-17T16:58:21Z" finished-at="2019-12-17T16:58:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_order1 -->
+        <test-method status="PASS" signature="test_order2()[pri:0, instance:azhouqianqian.HomeElectricity@3834d63f]" name="test_order2" duration-ms="21605" started-at="2019-12-17T16:58:43Z" finished-at="2019-12-17T16:59:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_order2 -->
+        <test-method status="PASS" signature="test_order3()[pri:0, instance:azhouqianqian.HomeElectricity@3834d63f]" name="test_order3" duration-ms="21841" started-at="2019-12-17T16:59:05Z" finished-at="2019-12-17T16:59:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_order3 -->
+        <test-method status="PASS" signature="test_order4()[pri:0, instance:azhouqianqian.HomeElectricity@3834d63f]" name="test_order4" duration-ms="21591" started-at="2019-12-17T16:59:26Z" finished-at="2019-12-17T16:59:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_order4 -->
+        <test-method status="PASS" signature="test_sort1_money()[pri:0, instance:azhouqianqian.HomeElectricity@3834d63f]" name="test_sort1_money" duration-ms="18487" started-at="2019-12-17T16:59:48Z" finished-at="2019-12-17T17:00:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_sort1_money -->
+        <test-method status="PASS" signature="test_sort2_money()[pri:0, instance:azhouqianqian.HomeElectricity@3834d63f]" name="test_sort2_money" duration-ms="18149" started-at="2019-12-17T17:00:06Z" finished-at="2019-12-17T17:00:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_sort2_money -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:azhouqianqian.HomeElectricity@3834d63f]" name="doAfterMethod" is-config="true" duration-ms="2752" started-at="2019-12-17T17:00:25Z" finished-at="2019-12-17T17:00:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- azhouqianqian.HomeElectricity -->
+      <class name="azhouqianqian.Login_Test">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:azhouqianqian.Login_Test@1ae369b7]" name="doBeforeClass" is-config="true" duration-ms="6592" started-at="2019-12-17T17:00:27Z" finished-at="2019-12-17T17:00:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="test_login2(java.lang.String, java.lang.String)[pri:0, instance:azhouqianqian.Login_Test@1ae369b7]" name="test_login2" duration-ms="0" started-at="2019-12-17T17:00:34Z" data-provider="test2" finished-at="2019-12-17T17:00:34Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at azhouqianqian.Login_Test.createData2(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login2 -->
+        <test-method status="SKIP" signature="test_login1(java.lang.String, java.lang.String)[pri:0, instance:azhouqianqian.Login_Test@1ae369b7]" name="test_login1" duration-ms="0" started-at="2019-12-17T17:00:34Z" data-provider="test1" finished-at="2019-12-17T17:00:34Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at azhouqianqian.Login_Test.createData1(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login1 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:azhouqianqian.Login_Test@1ae369b7]" name="doAfterMethod" is-config="true" duration-ms="3343" started-at="2019-12-17T17:00:34Z" finished-at="2019-12-17T17:00:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="test_login7(java.lang.String, java.lang.String)[pri:0, instance:azhouqianqian.Login_Test@1ae369b7]" name="test_login7" duration-ms="0" started-at="2019-12-17T17:00:34Z" data-provider="test7" finished-at="2019-12-17T17:00:34Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at azhouqianqian.Login_Test.createData7(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login7 -->
+        <test-method status="SKIP" signature="test_login6(java.lang.String, java.lang.String)[pri:0, instance:azhouqianqian.Login_Test@1ae369b7]" name="test_login6" duration-ms="0" started-at="2019-12-17T17:00:34Z" data-provider="test6" finished-at="2019-12-17T17:00:34Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at azhouqianqian.Login_Test.createData6(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login6 -->
+        <test-method status="SKIP" signature="test_login4(java.lang.String, java.lang.String)[pri:0, instance:azhouqianqian.Login_Test@1ae369b7]" name="test_login4" duration-ms="0" started-at="2019-12-17T17:00:34Z" data-provider="test4" finished-at="2019-12-17T17:00:34Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at azhouqianqian.Login_Test.createData4(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login4 -->
+        <test-method status="SKIP" signature="test_login5(java.lang.String, java.lang.String)[pri:0, instance:azhouqianqian.Login_Test@1ae369b7]" name="test_login5" duration-ms="0" started-at="2019-12-17T17:00:34Z" data-provider="test5" finished-at="2019-12-17T17:00:34Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at azhouqianqian.Login_Test.createData5(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login5 -->
+        <test-method status="SKIP" signature="test_login3(java.lang.String, java.lang.String)[pri:0, instance:azhouqianqian.Login_Test@1ae369b7]" name="test_login3" duration-ms="0" started-at="2019-12-17T17:00:34Z" data-provider="test3" finished-at="2019-12-17T17:00:34Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at azhouqianqian.Login_Test.createData3(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login3 -->
+      </class> <!-- azhouqianqian.Login_Test -->
+    </test> <!-- Regression1 -->
+  </suite> <!-- Suite1 -->
+</testng-results>

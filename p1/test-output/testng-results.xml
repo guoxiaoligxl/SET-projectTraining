@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="537333" started-at="2019-12-17T07:41:56Z" finished-at="2019-12-17T07:50:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="537333" started-at="2019-12-17T07:41:56Z" finished-at="2019-12-17T07:50:53Z">
+      <class name="guoxiaoli.Demo">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:guoxiaoli.Demo@1d251891]" name="doBeforeClass" is-config="true" duration-ms="16421" started-at="2019-12-17T15:41:56Z" finished-at="2019-12-17T15:42:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:guoxiaoli.Demo@1d251891]" name="login1" is-config="true" duration-ms="25671" started-at="2019-12-17T15:42:12Z" finished-at="2019-12-17T15:42:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="foodcart()[pri:31, instance:guoxiaoli.Demo@1d251891]" name="foodcart" duration-ms="42254" started-at="2019-12-17T15:42:38Z" finished-at="2019-12-17T15:43:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- foodcart -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:guoxiaoli.Demo@1d251891]" name="login1" is-config="true" duration-ms="23791" started-at="2019-12-17T15:43:20Z" finished-at="2019-12-17T15:43:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="foodbuy()[pri:32, instance:guoxiaoli.Demo@1d251891]" name="foodbuy" duration-ms="33615" started-at="2019-12-17T15:43:44Z" finished-at="2019-12-17T15:44:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- foodbuy -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:guoxiaoli.Demo@1d251891]" name="login1" is-config="true" duration-ms="12012" started-at="2019-12-17T15:44:17Z" finished-at="2019-12-17T15:44:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="jiajucart()[pri:33, instance:guoxiaoli.Demo@1d251891]" name="jiajucart" duration-ms="141931" started-at="2019-12-17T15:44:29Z" finished-at="2019-12-17T15:46:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jiajucart -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:guoxiaoli.Demo@1d251891]" name="login1" is-config="true" duration-ms="11922" started-at="2019-12-17T15:46:51Z" finished-at="2019-12-17T15:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="jiajubuy()[pri:34, instance:guoxiaoli.Demo@1d251891]" name="jiajubuy" duration-ms="36576" started-at="2019-12-17T15:47:03Z" finished-at="2019-12-17T15:47:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jiajubuy -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:guoxiaoli.Demo@1d251891]" name="login1" is-config="true" duration-ms="11189" started-at="2019-12-17T15:47:40Z" finished-at="2019-12-17T15:47:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="bagcart()[pri:35, instance:guoxiaoli.Demo@1d251891]" name="bagcart" duration-ms="98602" started-at="2019-12-17T15:47:51Z" finished-at="2019-12-17T15:49:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bagcart -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:guoxiaoli.Demo@1d251891]" name="login1" is-config="true" duration-ms="11808" started-at="2019-12-17T15:49:30Z" finished-at="2019-12-17T15:49:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="bagbuy()[pri:36, instance:guoxiaoli.Demo@1d251891]" name="bagbuy" duration-ms="38169" started-at="2019-12-17T15:49:41Z" finished-at="2019-12-17T15:50:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bagbuy -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:guoxiaoli.Demo@1d251891]" name="login1" is-config="true" duration-ms="11572" started-at="2019-12-17T15:50:20Z" finished-at="2019-12-17T15:50:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="backstage()[pri:37, instance:guoxiaoli.Demo@1d251891]" name="backstage" duration-ms="13108" started-at="2019-12-17T15:50:31Z" finished-at="2019-12-17T15:50:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backstage -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:guoxiaoli.Demo@1d251891]" name="doAfterMethod" is-config="true" duration-ms="8635" started-at="2019-12-17T15:50:44Z" finished-at="2019-12-17T15:50:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- guoxiaoli.Demo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

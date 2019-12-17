@@ -1,0 +1,3228 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 13 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite1">
+              <span class="suite-name border-failed">Suite1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite1">
+                    <span>F:\eclipse\p1\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite1">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite1">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite1">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite1">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite1">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite1">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">106 methods, 13 failed,  29 skipped,  64 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.ExchangePoints" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.ExchangePoints" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.ExchangePoints" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.ExchangePoints" hash-for-method="test4">test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.ExchangePoints" hash-for-method="test5">test5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="test_add3">test_add3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="test_add5">test_add5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.Pingtuan" hash-for-method="test_buy">test_buy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="testindent1">testindent1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="testindent2">testindent2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="testindent3">testindent3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="testindent4">testindent4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="testindent5">testindent5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods skipped suite-Suite1"> (hide)</a> <!-- hide-methods skipped suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods skipped suite-Suite1"> (show)</a> <!-- show-methods skipped suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite1">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="addBrandClassification">addBrandClassification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="addBrandList">addBrandList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="addClassificationList">addClassificationList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="addModelList">addModelList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo1" hash-for-method="addarticle">addarticle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo1" hash-for-method="delivery">delivery</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="exchangepw">exchangepw</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="fapiaoguanli">fapiaoguanli</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo1" hash-for-method="freight">freight</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="myselfaddaddress">myselfaddaddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="myselfjianyi">myselfjianyi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="opendian">opendian</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo1" hash-for-method="setpassowrd">setpassowrd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo1" hash-for-method="takeself">takeself</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="testAddGoods">testAddGoods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="testAddSizeList">testAddSizeList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="testBatchDeletionModelList">testBatchDeletionModelList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="testBatchOperation">testBatchOperation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="testEdit">testEdit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="testLotPending">testLotPending</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="testShareGoods">testShareGoods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.Login_Test" hash-for-method="test_login1">test_login1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.Login_Test" hash-for-method="test_login2">test_login2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.Login_Test" hash-for-method="test_login3">test_login3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.Login_Test" hash-for-method="test_login4">test_login4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.Login_Test" hash-for-method="test_login5">test_login5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.Login_Test" hash-for-method="test_login6">test_login6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.Login_Test" hash-for-method="test_login7">test_login7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="tixianshenqing">tixianshenqing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods passed suite-Suite1"> (hide)</a> <!-- hide-methods passed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods passed suite-Suite1"> (show)</a> <!-- show-methods passed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="Show_list7">Show_list7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="add1">add1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="add2">add2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="allshangpn">allshangpn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo" hash-for-method="backstage">backstage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo" hash-for-method="bagbuy">bagbuy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo" hash-for-method="bagcart">bagcart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo1" hash-for-method="db">db</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="deleteaddress">deleteaddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="deletefapiao">deletefapiao</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="duanxinxi">duanxinxi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo" hash-for-method="foodbuy">foodbuy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo" hash-for-method="foodcart">foodcart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="foodcart">foodcart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo" hash-for-method="jiajubuy">jiajubuy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo" hash-for-method="jiajucart">jiajucart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="jiaoyijilu">jiaoyijilu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="jiesuan">jiesuan</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="jixugouwu">jixugouwu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo1" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="myselfchangeaddress">myselfchangeaddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo1" hash-for-method="netset">netset</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="qingkong">qingkong</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="search">search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo1" hash-for-method="setback">setback</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo1" hash-for-method="setnav">setnav</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo1" hash-for-method="setquit">setquit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo1" hash-for-method="setshop">setshop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="shangjiaguanli">shangjiaguanli</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="shangpinpingjia">shangpinpingjia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="shangpinzixun">shangpinzixun</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="shoucangjia">shoucangjia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="shouhoufuwu">shouhoufuwu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="testAll6">testAll6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="testClassificationList">testClassificationList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="testViewBrandClassification">testViewBrandClassification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="testViewBrandList">testViewBrandList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="testViewModelList">testViewModelList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="zhangfan.BackStageTest" hash-for-method="testViewSizeList">testViewSizeList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="test_add1">test_add1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="test_add2">test_add2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="test_add4">test_add4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="test_add6">test_add6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="test_add7">test_add7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.Pingtuan" hash-for-method="test_jump1">test_jump1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.HomeElectricity" hash-for-method="test_jump1">test_jump1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.Pingtuan" hash-for-method="test_jump2">test_jump2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.HomeElectricity" hash-for-method="test_jump2">test_jump2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.HomeElectricity" hash-for-method="test_jump3">test_jump3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.Pingtuan" hash-for-method="test_jump3">test_jump3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.Pingtuan" hash-for-method="test_jump4">test_jump4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.HomeElectricity" hash-for-method="test_jump4">test_jump4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.HomeElectricity" hash-for-method="test_order1">test_order1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.HomeElectricity" hash-for-method="test_order2">test_order2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.HomeElectricity" hash-for-method="test_order3">test_order3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.HomeElectricity" hash-for-method="test_order4">test_order4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.BackgroundTest" hash-for-method="test_show8">test_show8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.HomeElectricity" hash-for-method="test_sort1_money">test_sort1_money</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="azhouqianqian.HomeElectricity" hash-for-method="test_sort2_money">test_sort2_money</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="tubiao">tubiao</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="wodedingdan">wodedingdan</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="wodejifen">wodejifen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lixuan.LoginTest" hash-for-method="wodeyouhuiquan">wodeyouhuiquan</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="guoxiaoli.Demo1" hash-for-method="xitong">xitong</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite1" class="panel Suite1">
+          <div class="suite-Suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">azhouqianqian.BackgroundTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_add3">
+                  </a> <!-- test_add3 -->
+                  <span class="method-name">test_add3</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt; is not clickable at point (433,404) because another element &lt;iframe src=&quot;about:blank&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15008, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67bb40fe-b47e-4fe1-8a4a-90acf00bf636
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:158)
+	at azhouqianqian.BackgroundTest.test_add3(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_add5">
+                  </a> <!-- test_add5 -->
+                  <span class="method-name">test_add5</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt; is not clickable at point (433,316) because another element &lt;iframe src=&quot;about:blank&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-QMO9A9N&apos;, ip: &apos;169.254.144.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15008, moz:profile: C:\Users\Dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67bb40fe-b47e-4fe1-8a4a-90acf00bf636
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:158)
+	at azhouqianqian.BackgroundTest.test_add5(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testindent1">
+                  </a> <!-- testindent1 -->
+                  <span class="method-name">testindent1</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.BackgroundTest.testindent1(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testindent2">
+                  </a> <!-- testindent2 -->
+                  <span class="method-name">testindent2</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.BackgroundTest.testindent2(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testindent3">
+                  </a> <!-- testindent3 -->
+                  <span class="method-name">testindent3</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.BackgroundTest.testindent3(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testindent4">
+                  </a> <!-- testindent4 -->
+                  <span class="method-name">testindent4</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.BackgroundTest.testindent4(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testindent5">
+                  </a> <!-- testindent5 -->
+                  <span class="method-name">testindent5</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.BackgroundTest.testindent5(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-failed -->
+          <div class="suite-Suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">azhouqianqian.ExchangePoints</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.ExchangePoints.test1(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.ExchangePoints.test2(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.ExchangePoints.test3(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test4">
+                  </a> <!-- test4 -->
+                  <span class="method-name">test4</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.ExchangePoints.test4(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test5">
+                  </a> <!-- test5 -->
+                  <span class="method-name">test5</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.ExchangePoints.test5(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-failed -->
+          <div class="suite-Suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">azhouqianqian.Pingtuan</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_buy">
+                  </a> <!-- test_buy -->
+                  <span class="method-name">test_buy</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at azhouqianqian.Pingtuan.test_buy(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-failed -->
+          <div class="suite-Suite1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">guoxiaoli.Demo1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addarticle">
+                  </a> <!-- addarticle -->
+                  <span class="method-name">addarticle</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at guoxiaoli.Demo1.createData4(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="delivery">
+                  </a> <!-- delivery -->
+                  <span class="method-name">delivery</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at guoxiaoli.Demo1.createData1(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="freight">
+                  </a> <!-- freight -->
+                  <span class="method-name">freight</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at guoxiaoli.Demo1.createData2(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setpassowrd">
+                  </a> <!-- setpassowrd -->
+                  <span class="method-name">setpassowrd</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at guoxiaoli.Demo1.createData(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="takeself">
+                  </a> <!-- takeself -->
+                  <span class="method-name">takeself</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at guoxiaoli.Demo1.createData3(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-skipped -->
+          <div class="suite-Suite1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">zhangfan.BackStageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addBrandClassification">
+                  </a> <!-- addBrandClassification -->
+                  <span class="method-name">addBrandClassification</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData7(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addBrandList">
+                  </a> <!-- addBrandList -->
+                  <span class="method-name">addBrandList</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData6(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addClassificationList">
+                  </a> <!-- addClassificationList -->
+                  <span class="method-name">addClassificationList</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData8(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addModelList">
+                  </a> <!-- addModelList -->
+                  <span class="method-name">addModelList</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData4(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddGoods">
+                  </a> <!-- testAddGoods -->
+                  <span class="method-name">testAddGoods</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData1(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddSizeList">
+                  </a> <!-- testAddSizeList -->
+                  <span class="method-name">testAddSizeList</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData5(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBatchDeletionModelList">
+                  </a> <!-- testBatchDeletionModelList -->
+                  <span class="method-name">testBatchDeletionModelList</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData3(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBatchOperation">
+                  </a> <!-- testBatchOperation -->
+                  <span class="method-name">testBatchOperation</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData2(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEdit">
+                  </a> <!-- testEdit -->
+                  <span class="method-name">testEdit</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData2(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLotPending">
+                  </a> <!-- testLotPending -->
+                  <span class="method-name">testLotPending</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData2(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testShareGoods">
+                  </a> <!-- testShareGoods -->
+                  <span class="method-name">testShareGoods</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at zhangfan.BackStageTest.createData2(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-skipped -->
+          <div class="suite-Suite1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">lixuan.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="exchangepw">
+                  </a> <!-- exchangepw -->
+                  <span class="method-name">exchangepw</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at lixuan.LoginTest.createData5(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fapiaoguanli">
+                  </a> <!-- fapiaoguanli -->
+                  <span class="method-name">fapiaoguanli</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at lixuan.LoginTest.createData4(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="myselfaddaddress">
+                  </a> <!-- myselfaddaddress -->
+                  <span class="method-name">myselfaddaddress</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at lixuan.LoginTest.createData3(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="myselfjianyi">
+                  </a> <!-- myselfjianyi -->
+                  <span class="method-name">myselfjianyi</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at lixuan.LoginTest.createData1(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="opendian">
+                  </a> <!-- opendian -->
+                  <span class="method-name">opendian</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at lixuan.LoginTest.createData6(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tixianshenqing">
+                  </a> <!-- tixianshenqing -->
+                  <span class="method-name">tixianshenqing</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at lixuan.LoginTest.createData2(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-skipped -->
+          <div class="suite-Suite1-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">azhouqianqian.Login_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_login1">
+                  </a> <!-- test_login1 -->
+                  <span class="method-name">test_login1</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at azhouqianqian.Login_Test.createData1(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_login2">
+                  </a> <!-- test_login2 -->
+                  <span class="method-name">test_login2</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at azhouqianqian.Login_Test.createData2(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_login3">
+                  </a> <!-- test_login3 -->
+                  <span class="method-name">test_login3</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at azhouqianqian.Login_Test.createData3(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_login4">
+                  </a> <!-- test_login4 -->
+                  <span class="method-name">test_login4</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at azhouqianqian.Login_Test.createData4(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_login5">
+                  </a> <!-- test_login5 -->
+                  <span class="method-name">test_login5</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at azhouqianqian.Login_Test.createData5(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_login6">
+                  </a> <!-- test_login6 -->
+                  <span class="method-name">test_login6</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at azhouqianqian.Login_Test.createData6(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_login7">
+                  </a> <!-- test_login7 -->
+                  <span class="method-name">test_login7</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.webtest.dataprovider.ExcelDataProvider.getTestDataByExcel(ExcelDataProvider.java:34)
+	at azhouqianqian.Login_Test.createData7(Unknown Source)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-skipped -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">guoxiaoli.Demo1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="db">
+                  </a> <!-- db -->
+                  <span class="method-name">db</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="netset">
+                  </a> <!-- netset -->
+                  <span class="method-name">netset</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setback">
+                  </a> <!-- setback -->
+                  <span class="method-name">setback</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setnav">
+                  </a> <!-- setnav -->
+                  <span class="method-name">setnav</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setquit">
+                  </a> <!-- setquit -->
+                  <span class="method-name">setquit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setshop">
+                  </a> <!-- setshop -->
+                  <span class="method-name">setshop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="xitong">
+                  </a> <!-- xitong -->
+                  <span class="method-name">xitong</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">zhangfan.BackStageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClassificationList">
+                  </a> <!-- testClassificationList -->
+                  <span class="method-name">testClassificationList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testViewBrandClassification">
+                  </a> <!-- testViewBrandClassification -->
+                  <span class="method-name">testViewBrandClassification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testViewBrandList">
+                  </a> <!-- testViewBrandList -->
+                  <span class="method-name">testViewBrandList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testViewModelList">
+                  </a> <!-- testViewModelList -->
+                  <span class="method-name">testViewModelList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testViewSizeList">
+                  </a> <!-- testViewSizeList -->
+                  <span class="method-name">testViewSizeList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">azhouqianqian.HomeElectricity</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_jump1">
+                  </a> <!-- test_jump1 -->
+                  <span class="method-name">test_jump1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_jump2">
+                  </a> <!-- test_jump2 -->
+                  <span class="method-name">test_jump2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_jump3">
+                  </a> <!-- test_jump3 -->
+                  <span class="method-name">test_jump3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_jump4">
+                  </a> <!-- test_jump4 -->
+                  <span class="method-name">test_jump4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_order1">
+                  </a> <!-- test_order1 -->
+                  <span class="method-name">test_order1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_order2">
+                  </a> <!-- test_order2 -->
+                  <span class="method-name">test_order2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_order3">
+                  </a> <!-- test_order3 -->
+                  <span class="method-name">test_order3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_order4">
+                  </a> <!-- test_order4 -->
+                  <span class="method-name">test_order4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_sort1_money">
+                  </a> <!-- test_sort1_money -->
+                  <span class="method-name">test_sort1_money</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_sort2_money">
+                  </a> <!-- test_sort2_money -->
+                  <span class="method-name">test_sort2_money</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">azhouqianqian.BackgroundTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Show_list7">
+                  </a> <!-- Show_list7 -->
+                  <span class="method-name">Show_list7</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAll6">
+                  </a> <!-- testAll6 -->
+                  <span class="method-name">testAll6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_add1">
+                  </a> <!-- test_add1 -->
+                  <span class="method-name">test_add1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_add2">
+                  </a> <!-- test_add2 -->
+                  <span class="method-name">test_add2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_add4">
+                  </a> <!-- test_add4 -->
+                  <span class="method-name">test_add4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_add6">
+                  </a> <!-- test_add6 -->
+                  <span class="method-name">test_add6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_add7">
+                  </a> <!-- test_add7 -->
+                  <span class="method-name">test_add7</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_show8">
+                  </a> <!-- test_show8 -->
+                  <span class="method-name">test_show8</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">lixuan.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add1">
+                  </a> <!-- add1 -->
+                  <span class="method-name">add1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="add2">
+                  </a> <!-- add2 -->
+                  <span class="method-name">add2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="allshangpn">
+                  </a> <!-- allshangpn -->
+                  <span class="method-name">allshangpn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteaddress">
+                  </a> <!-- deleteaddress -->
+                  <span class="method-name">deleteaddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletefapiao">
+                  </a> <!-- deletefapiao -->
+                  <span class="method-name">deletefapiao</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="duanxinxi">
+                  </a> <!-- duanxinxi -->
+                  <span class="method-name">duanxinxi</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="foodcart">
+                  </a> <!-- foodcart -->
+                  <span class="method-name">foodcart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="jiaoyijilu">
+                  </a> <!-- jiaoyijilu -->
+                  <span class="method-name">jiaoyijilu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="jiesuan">
+                  </a> <!-- jiesuan -->
+                  <span class="method-name">jiesuan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="jixugouwu">
+                  </a> <!-- jixugouwu -->
+                  <span class="method-name">jixugouwu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="myselfchangeaddress">
+                  </a> <!-- myselfchangeaddress -->
+                  <span class="method-name">myselfchangeaddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="qingkong">
+                  </a> <!-- qingkong -->
+                  <span class="method-name">qingkong</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="search">
+                  </a> <!-- search -->
+                  <span class="method-name">search</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shangjiaguanli">
+                  </a> <!-- shangjiaguanli -->
+                  <span class="method-name">shangjiaguanli</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shangpinpingjia">
+                  </a> <!-- shangpinpingjia -->
+                  <span class="method-name">shangpinpingjia</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shangpinzixun">
+                  </a> <!-- shangpinzixun -->
+                  <span class="method-name">shangpinzixun</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shoucangjia">
+                  </a> <!-- shoucangjia -->
+                  <span class="method-name">shoucangjia</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouhoufuwu">
+                  </a> <!-- shouhoufuwu -->
+                  <span class="method-name">shouhoufuwu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tubiao">
+                  </a> <!-- tubiao -->
+                  <span class="method-name">tubiao</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wodedingdan">
+                  </a> <!-- wodedingdan -->
+                  <span class="method-name">wodedingdan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wodejifen">
+                  </a> <!-- wodejifen -->
+                  <span class="method-name">wodejifen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wodeyouhuiquan">
+                  </a> <!-- wodeyouhuiquan -->
+                  <span class="method-name">wodeyouhuiquan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">guoxiaoli.Demo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="backstage">
+                  </a> <!-- backstage -->
+                  <span class="method-name">backstage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bagbuy">
+                  </a> <!-- bagbuy -->
+                  <span class="method-name">bagbuy</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bagcart">
+                  </a> <!-- bagcart -->
+                  <span class="method-name">bagcart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="foodbuy">
+                  </a> <!-- foodbuy -->
+                  <span class="method-name">foodbuy</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="foodcart">
+                  </a> <!-- foodcart -->
+                  <span class="method-name">foodcart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="jiajubuy">
+                  </a> <!-- jiajubuy -->
+                  <span class="method-name">jiajubuy</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="jiajucart">
+                  </a> <!-- jiajucart -->
+                  <span class="method-name">jiajucart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">azhouqianqian.Pingtuan</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_jump1">
+                  </a> <!-- test_jump1 -->
+                  <span class="method-name">test_jump1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_jump2">
+                  </a> <!-- test_jump2 -->
+                  <span class="method-name">test_jump2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_jump3">
+                  </a> <!-- test_jump3 -->
+                  <span class="method-name">test_jump3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_jump4">
+                  </a> <!-- test_jump4 -->
+                  <span class="method-name">test_jump4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+        </div> <!-- panel Suite1 -->
+        <div panel-name="test-xml-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\eclipse\p1\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite1&quot;&gt;
+  &lt;test name=&quot;Regression1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;guoxiaoli.Demo&quot;/&gt;
+      &lt;class name=&quot;guoxiaoli.Demo1&quot;/&gt;
+      &lt;class name=&quot;lixuan.LoginTest&quot;/&gt;
+      &lt;class name=&quot;zhangfan.BackStageTest&quot;/&gt;
+      &lt;class name=&quot;azhouqianqian.BackgroundTest&quot;/&gt;
+      &lt;class name=&quot;azhouqianqian.ExchangePoints&quot;/&gt;
+      &lt;class name=&quot;azhouqianqian.HomeElectricity&quot;/&gt;
+      &lt;class name=&quot;azhouqianqian.Login_Test&quot;/&gt;
+      &lt;class name=&quot;azhouqianqian.Pingtuan&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression1 --&gt;
+  &lt;test name=&quot;Regression1(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;zhangfan.BackStageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addBrandClassification&quot;/&gt;
+          &lt;include name=&quot;testBatchDeletionModelList&quot;/&gt;
+          &lt;include name=&quot;doAfterMethod&quot;/&gt;
+          &lt;include name=&quot;testLotPending&quot;/&gt;
+          &lt;include name=&quot;addBrandList&quot;/&gt;
+          &lt;include name=&quot;testAddGoods&quot;/&gt;
+          &lt;include name=&quot;testAddSizeList&quot;/&gt;
+          &lt;include name=&quot;testBackstageLogin&quot;/&gt;
+          &lt;include name=&quot;testBatchOperation&quot;/&gt;
+          &lt;include name=&quot;testShareGoods&quot;/&gt;
+          &lt;include name=&quot;testEdit&quot;/&gt;
+          &lt;include name=&quot;addClassificationList&quot;/&gt;
+          &lt;include name=&quot;doBeforeClass&quot;/&gt;
+          &lt;include name=&quot;addModelList&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- zhangfan.BackStageTest --&gt;
+      &lt;class name=&quot;guoxiaoli.Demo1&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;doAfterMethod&quot;/&gt;
+          &lt;include name=&quot;addarticle&quot;/&gt;
+          &lt;include name=&quot;freight&quot;/&gt;
+          &lt;include name=&quot;doBeforeClass&quot;/&gt;
+          &lt;include name=&quot;delivery&quot;/&gt;
+          &lt;include name=&quot;setpassowrd&quot;/&gt;
+          &lt;include name=&quot;takeself&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- guoxiaoli.Demo1 --&gt;
+      &lt;class name=&quot;azhouqianqian.HomeElectricity&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;doAfterMethod&quot;/&gt;
+          &lt;include name=&quot;doBeforeClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- azhouqianqian.HomeElectricity --&gt;
+      &lt;class name=&quot;azhouqianqian.BackgroundTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_add3&quot;/&gt;
+          &lt;include name=&quot;doAfterMethod&quot;/&gt;
+          &lt;include name=&quot;testindent1&quot;/&gt;
+          &lt;include name=&quot;testindent2&quot;/&gt;
+          &lt;include name=&quot;backLogin&quot;/&gt;
+          &lt;include name=&quot;test_add5&quot;/&gt;
+          &lt;include name=&quot;testindent3&quot;/&gt;
+          &lt;include name=&quot;testindent4&quot;/&gt;
+          &lt;include name=&quot;doBeforeClass&quot;/&gt;
+          &lt;include name=&quot;testindent5&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- azhouqianqian.BackgroundTest --&gt;
+      &lt;class name=&quot;lixuan.LoginTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;opendian&quot;/&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;doAfterMethod&quot;/&gt;
+          &lt;include name=&quot;myselfjianyi&quot;/&gt;
+          &lt;include name=&quot;fapiaoguanli&quot;/&gt;
+          &lt;include name=&quot;exchangepw&quot;/&gt;
+          &lt;include name=&quot;doBeforeClass&quot;/&gt;
+          &lt;include name=&quot;myselfaddaddress&quot;/&gt;
+          &lt;include name=&quot;tixianshenqing&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- lixuan.LoginTest --&gt;
+      &lt;class name=&quot;azhouqianqian.ExchangePoints&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test2&quot;/&gt;
+          &lt;include name=&quot;doAfterMethod&quot;/&gt;
+          &lt;include name=&quot;test5&quot;/&gt;
+          &lt;include name=&quot;test3&quot;/&gt;
+          &lt;include name=&quot;test1&quot;/&gt;
+          &lt;include name=&quot;test4&quot;/&gt;
+          &lt;include name=&quot;doBeforeClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- azhouqianqian.ExchangePoints --&gt;
+      &lt;class name=&quot;azhouqianqian.Login_Test&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_login3&quot;/&gt;
+          &lt;include name=&quot;test_login4&quot;/&gt;
+          &lt;include name=&quot;test_login1&quot;/&gt;
+          &lt;include name=&quot;test_login2&quot;/&gt;
+          &lt;include name=&quot;doAfterMethod&quot;/&gt;
+          &lt;include name=&quot;test_login7&quot;/&gt;
+          &lt;include name=&quot;doBeforeClass&quot;/&gt;
+          &lt;include name=&quot;test_login5&quot;/&gt;
+          &lt;include name=&quot;test_login6&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- azhouqianqian.Login_Test --&gt;
+      &lt;class name=&quot;guoxiaoli.Demo&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;doAfterMethod&quot;/&gt;
+          &lt;include name=&quot;login1&quot;/&gt;
+          &lt;include name=&quot;doBeforeClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- guoxiaoli.Demo --&gt;
+      &lt;class name=&quot;azhouqianqian.Pingtuan&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;doAfterMethod&quot;/&gt;
+          &lt;include name=&quot;doBeforeClass&quot;/&gt;
+          &lt;include name=&quot;test_buy&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- azhouqianqian.Pingtuan --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression1(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Suite1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regression1 (9 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Regression1(failed) (9 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite1');
+function tableData_Suite1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(106);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'jiajucart')
+data.setCell(0, 2, 'guoxiaoli.Demo')
+data.setCell(0, 3, 327500);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'foodcart')
+data.setCell(1, 2, 'guoxiaoli.Demo')
+data.setCell(1, 3, 174389);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Show_list7')
+data.setCell(2, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(2, 3, 110271);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'allshangpn')
+data.setCell(3, 2, 'lixuan.LoginTest')
+data.setCell(3, 3, 86789);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'bagcart')
+data.setCell(4, 2, 'guoxiaoli.Demo')
+data.setCell(4, 3, 78063);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test_buy')
+data.setCell(5, 2, 'azhouqianqian.Pingtuan')
+data.setCell(5, 3, 61259);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'jiajubuy')
+data.setCell(6, 2, 'guoxiaoli.Demo')
+data.setCell(6, 3, 41554);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'add1')
+data.setCell(7, 2, 'lixuan.LoginTest')
+data.setCell(7, 3, 36998);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'bagbuy')
+data.setCell(8, 2, 'guoxiaoli.Demo')
+data.setCell(8, 3, 36361);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'foodbuy')
+data.setCell(9, 2, 'guoxiaoli.Demo')
+data.setCell(9, 3, 35039);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test_add4')
+data.setCell(10, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(10, 3, 34381);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'test_add2')
+data.setCell(11, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(11, 3, 34305);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'tubiao')
+data.setCell(12, 2, 'lixuan.LoginTest')
+data.setCell(12, 3, 30053);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'test_add6')
+data.setCell(13, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(13, 3, 28431);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'test_add7')
+data.setCell(14, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(14, 3, 23885);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'jiesuan')
+data.setCell(15, 2, 'lixuan.LoginTest')
+data.setCell(15, 3, 23772);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'test_add1')
+data.setCell(16, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(16, 3, 22636);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'shouhoufuwu')
+data.setCell(17, 2, 'lixuan.LoginTest')
+data.setCell(17, 3, 22339);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'test_order3')
+data.setCell(18, 2, 'azhouqianqian.HomeElectricity')
+data.setCell(18, 3, 21841);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'test_order1')
+data.setCell(19, 2, 'azhouqianqian.HomeElectricity')
+data.setCell(19, 3, 21800);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'test2')
+data.setCell(20, 2, 'azhouqianqian.ExchangePoints')
+data.setCell(20, 3, 21798);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'test_order2')
+data.setCell(21, 2, 'azhouqianqian.HomeElectricity')
+data.setCell(21, 3, 21605);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'test_order4')
+data.setCell(22, 2, 'azhouqianqian.HomeElectricity')
+data.setCell(22, 3, 21591);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'deletefapiao')
+data.setCell(23, 2, 'lixuan.LoginTest')
+data.setCell(23, 3, 20788);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'deleteaddress')
+data.setCell(24, 2, 'lixuan.LoginTest')
+data.setCell(24, 3, 20183);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'myselfchangeaddress')
+data.setCell(25, 2, 'lixuan.LoginTest')
+data.setCell(25, 3, 19738);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'test_jump2')
+data.setCell(26, 2, 'azhouqianqian.Pingtuan')
+data.setCell(26, 3, 18999);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'test_sort1_money')
+data.setCell(27, 2, 'azhouqianqian.HomeElectricity')
+data.setCell(27, 3, 18487);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'test_sort2_money')
+data.setCell(28, 2, 'azhouqianqian.HomeElectricity')
+data.setCell(28, 3, 18149);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testindent5')
+data.setCell(29, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(29, 3, 17793);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testindent1')
+data.setCell(30, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(30, 3, 17699);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testindent4')
+data.setCell(31, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(31, 3, 17667);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'test_jump1')
+data.setCell(32, 2, 'azhouqianqian.Pingtuan')
+data.setCell(32, 3, 17157);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'shangpinpingjia')
+data.setCell(33, 2, 'lixuan.LoginTest')
+data.setCell(33, 3, 17136);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'test_jump3')
+data.setCell(34, 2, 'azhouqianqian.Pingtuan')
+data.setCell(34, 3, 16992);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'setnav')
+data.setCell(35, 2, 'guoxiaoli.Demo1')
+data.setCell(35, 3, 16884);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'test_jump4')
+data.setCell(36, 2, 'azhouqianqian.Pingtuan')
+data.setCell(36, 3, 16882);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'shangjiaguanli')
+data.setCell(37, 2, 'lixuan.LoginTest')
+data.setCell(37, 3, 16187);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'test_add5')
+data.setCell(38, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(38, 3, 15169);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'add2')
+data.setCell(39, 2, 'lixuan.LoginTest')
+data.setCell(39, 3, 15107);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'test_add3')
+data.setCell(40, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(40, 3, 14840);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'qingkong')
+data.setCell(41, 2, 'lixuan.LoginTest')
+data.setCell(41, 3, 14538);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'testindent2')
+data.setCell(42, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(42, 3, 14075);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'testindent3')
+data.setCell(43, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(43, 3, 13903);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'netset')
+data.setCell(44, 2, 'guoxiaoli.Demo1')
+data.setCell(44, 3, 13778);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'test_show8')
+data.setCell(45, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(45, 3, 11732);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'testViewModelList')
+data.setCell(46, 2, 'zhangfan.BackStageTest')
+data.setCell(46, 3, 11576);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'test_jump1')
+data.setCell(47, 2, 'azhouqianqian.HomeElectricity')
+data.setCell(47, 3, 11519);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'testViewSizeList')
+data.setCell(48, 2, 'zhangfan.BackStageTest')
+data.setCell(48, 3, 11482);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'testViewBrandClassification')
+data.setCell(49, 2, 'zhangfan.BackStageTest')
+data.setCell(49, 3, 11341);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'jiaoyijilu')
+data.setCell(50, 2, 'lixuan.LoginTest')
+data.setCell(50, 3, 11319);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'testClassificationList')
+data.setCell(51, 2, 'zhangfan.BackStageTest')
+data.setCell(51, 3, 11028);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'login')
+data.setCell(52, 2, 'guoxiaoli.Demo1')
+data.setCell(52, 3, 10950);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'backstage')
+data.setCell(53, 2, 'guoxiaoli.Demo')
+data.setCell(53, 3, 10763);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'testViewBrandList')
+data.setCell(54, 2, 'zhangfan.BackStageTest')
+data.setCell(54, 3, 10763);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'wodejifen')
+data.setCell(55, 2, 'lixuan.LoginTest')
+data.setCell(55, 3, 10524);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'jixugouwu')
+data.setCell(56, 2, 'lixuan.LoginTest')
+data.setCell(56, 3, 10364);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'wodeyouhuiquan')
+data.setCell(57, 2, 'lixuan.LoginTest')
+data.setCell(57, 3, 10345);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'shoucangjia')
+data.setCell(58, 2, 'lixuan.LoginTest')
+data.setCell(58, 3, 10261);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'shangpinzixun')
+data.setCell(59, 2, 'lixuan.LoginTest')
+data.setCell(59, 3, 9535);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'wodedingdan')
+data.setCell(60, 2, 'lixuan.LoginTest')
+data.setCell(60, 3, 9227);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'duanxinxi')
+data.setCell(61, 2, 'lixuan.LoginTest')
+data.setCell(61, 3, 9177);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'setback')
+data.setCell(62, 2, 'guoxiaoli.Demo1')
+data.setCell(62, 3, 8904);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'setshop')
+data.setCell(63, 2, 'guoxiaoli.Demo1')
+data.setCell(63, 3, 8860);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'test3')
+data.setCell(64, 2, 'azhouqianqian.ExchangePoints')
+data.setCell(64, 3, 8628);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'test4')
+data.setCell(65, 2, 'azhouqianqian.ExchangePoints')
+data.setCell(65, 3, 8350);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'test1')
+data.setCell(66, 2, 'azhouqianqian.ExchangePoints')
+data.setCell(66, 3, 7821);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'test5')
+data.setCell(67, 2, 'azhouqianqian.ExchangePoints')
+data.setCell(67, 3, 7692);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'xitong')
+data.setCell(68, 2, 'guoxiaoli.Demo1')
+data.setCell(68, 3, 7354);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'db')
+data.setCell(69, 2, 'guoxiaoli.Demo1')
+data.setCell(69, 3, 7171);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'testAll6')
+data.setCell(70, 2, 'azhouqianqian.BackgroundTest')
+data.setCell(70, 3, 7045);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'test_jump2')
+data.setCell(71, 2, 'azhouqianqian.HomeElectricity')
+data.setCell(71, 3, 6618);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'setquit')
+data.setCell(72, 2, 'guoxiaoli.Demo1')
+data.setCell(72, 3, 6264);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'test_jump3')
+data.setCell(73, 2, 'azhouqianqian.HomeElectricity')
+data.setCell(73, 3, 5771);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'test_jump4')
+data.setCell(74, 2, 'azhouqianqian.HomeElectricity')
+data.setCell(74, 3, 5645);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'foodcart')
+data.setCell(75, 2, 'lixuan.LoginTest')
+data.setCell(75, 3, 5357);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'search')
+data.setCell(76, 2, 'lixuan.LoginTest')
+data.setCell(76, 3, 4753);
+data.setCell(77, 0, 77)
+data.setCell(77, 1, 'addarticle')
+data.setCell(77, 2, 'guoxiaoli.Demo1')
+data.setCell(77, 3, 0);
+data.setCell(78, 0, 78)
+data.setCell(78, 1, 'freight')
+data.setCell(78, 2, 'guoxiaoli.Demo1')
+data.setCell(78, 3, 0);
+data.setCell(79, 0, 79)
+data.setCell(79, 1, 'myselfaddaddress')
+data.setCell(79, 2, 'lixuan.LoginTest')
+data.setCell(79, 3, 0);
+data.setCell(80, 0, 80)
+data.setCell(80, 1, 'fapiaoguanli')
+data.setCell(80, 2, 'lixuan.LoginTest')
+data.setCell(80, 3, 0);
+data.setCell(81, 0, 81)
+data.setCell(81, 1, 'testLotPending')
+data.setCell(81, 2, 'zhangfan.BackStageTest')
+data.setCell(81, 3, 0);
+data.setCell(82, 0, 82)
+data.setCell(82, 1, 'testAddSizeList')
+data.setCell(82, 2, 'zhangfan.BackStageTest')
+data.setCell(82, 3, 0);
+data.setCell(83, 0, 83)
+data.setCell(83, 1, 'addBrandClassification')
+data.setCell(83, 2, 'zhangfan.BackStageTest')
+data.setCell(83, 3, 0);
+data.setCell(84, 0, 84)
+data.setCell(84, 1, 'tixianshenqing')
+data.setCell(84, 2, 'lixuan.LoginTest')
+data.setCell(84, 3, 0);
+data.setCell(85, 0, 85)
+data.setCell(85, 1, 'test_login2')
+data.setCell(85, 2, 'azhouqianqian.Login_Test')
+data.setCell(85, 3, 0);
+data.setCell(86, 0, 86)
+data.setCell(86, 1, 'test_login4')
+data.setCell(86, 2, 'azhouqianqian.Login_Test')
+data.setCell(86, 3, 0);
+data.setCell(87, 0, 87)
+data.setCell(87, 1, 'myselfjianyi')
+data.setCell(87, 2, 'lixuan.LoginTest')
+data.setCell(87, 3, 0);
+data.setCell(88, 0, 88)
+data.setCell(88, 1, 'addBrandList')
+data.setCell(88, 2, 'zhangfan.BackStageTest')
+data.setCell(88, 3, 0);
+data.setCell(89, 0, 89)
+data.setCell(89, 1, 'delivery')
+data.setCell(89, 2, 'guoxiaoli.Demo1')
+data.setCell(89, 3, 0);
+data.setCell(90, 0, 90)
+data.setCell(90, 1, 'testBatchDeletionModelList')
+data.setCell(90, 2, 'zhangfan.BackStageTest')
+data.setCell(90, 3, 0);
+data.setCell(91, 0, 91)
+data.setCell(91, 1, 'test_login5')
+data.setCell(91, 2, 'azhouqianqian.Login_Test')
+data.setCell(91, 3, 0);
+data.setCell(92, 0, 92)
+data.setCell(92, 1, 'setpassowrd')
+data.setCell(92, 2, 'guoxiaoli.Demo1')
+data.setCell(92, 3, 0);
+data.setCell(93, 0, 93)
+data.setCell(93, 1, 'exchangepw')
+data.setCell(93, 2, 'lixuan.LoginTest')
+data.setCell(93, 3, 0);
+data.setCell(94, 0, 94)
+data.setCell(94, 1, 'test_login1')
+data.setCell(94, 2, 'azhouqianqian.Login_Test')
+data.setCell(94, 3, 0);
+data.setCell(95, 0, 95)
+data.setCell(95, 1, 'testEdit')
+data.setCell(95, 2, 'zhangfan.BackStageTest')
+data.setCell(95, 3, 0);
+data.setCell(96, 0, 96)
+data.setCell(96, 1, 'testBatchOperation')
+data.setCell(96, 2, 'zhangfan.BackStageTest')
+data.setCell(96, 3, 0);
+data.setCell(97, 0, 97)
+data.setCell(97, 1, 'testShareGoods')
+data.setCell(97, 2, 'zhangfan.BackStageTest')
+data.setCell(97, 3, 0);
+data.setCell(98, 0, 98)
+data.setCell(98, 1, 'takeself')
+data.setCell(98, 2, 'guoxiaoli.Demo1')
+data.setCell(98, 3, 0);
+data.setCell(99, 0, 99)
+data.setCell(99, 1, 'opendian')
+data.setCell(99, 2, 'lixuan.LoginTest')
+data.setCell(99, 3, 0);
+data.setCell(100, 0, 100)
+data.setCell(100, 1, 'addModelList')
+data.setCell(100, 2, 'zhangfan.BackStageTest')
+data.setCell(100, 3, 0);
+data.setCell(101, 0, 101)
+data.setCell(101, 1, 'testAddGoods')
+data.setCell(101, 2, 'zhangfan.BackStageTest')
+data.setCell(101, 3, 0);
+data.setCell(102, 0, 102)
+data.setCell(102, 1, 'test_login3')
+data.setCell(102, 2, 'azhouqianqian.Login_Test')
+data.setCell(102, 3, 0);
+data.setCell(103, 0, 103)
+data.setCell(103, 1, 'addClassificationList')
+data.setCell(103, 2, 'zhangfan.BackStageTest')
+data.setCell(103, 3, 0);
+data.setCell(104, 0, 104)
+data.setCell(104, 1, 'test_login7')
+data.setCell(104, 2, 'azhouqianqian.Login_Test')
+data.setCell(104, 3, 0);
+data.setCell(105, 0, 105)
+data.setCell(105, 1, 'test_login6')
+data.setCell(105, 2, 'azhouqianqian.Login_Test')
+data.setCell(105, 3, 0);
+window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 32 minutes</span>
+              <div id="times-div-Suite1">
+              </div> <!-- times-div-Suite1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">guoxiaoli.Demo</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login1</span>
+                <span class="method-start">17430 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">foodcart</span>
+                <span class="method-start">80259 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login1</span>
+                <span class="method-start">254652 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">foodbuy</span>
+                <span class="method-start">277481 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login1</span>
+                <span class="method-start">312522 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">jiajucart</span>
+                <span class="method-start">324158 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login1</span>
+                <span class="method-start">651660 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">jiajubuy</span>
+                <span class="method-start">675298 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login1</span>
+                <span class="method-start">716853 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">bagcart</span>
+                <span class="method-start">739990 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login1</span>
+                <span class="method-start">818054 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">bagbuy</span>
+                <span class="method-start">841527 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login1</span>
+                <span class="method-start">877889 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">backstage</span>
+                <span class="method-start">901416 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">912179 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">guoxiaoli.Demo1</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">915663 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">928191 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">xitong</span>
+                <span class="method-start">939141 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">netset</span>
+                <span class="method-start">946495 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">db</span>
+                <span class="method-start">961210 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setback</span>
+                <span class="method-start">968396 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setshop</span>
+                <span class="method-start">977300 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setnav</span>
+                <span class="method-start">986160 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setquit</span>
+                <span class="method-start">1003044 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1009308 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lixuan.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1011511 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1018119 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">wodedingdan</span>
+                <span class="method-start">1074145 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1083373 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">wodejifen</span>
+                <span class="method-start">1092038 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1102563 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">wodeyouhuiquan</span>
+                <span class="method-start">1111589 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1121937 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouhoufuwu</span>
+                <span class="method-start">1131201 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1153541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shangpinzixun</span>
+                <span class="method-start">1163372 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1172907 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shangpinpingjia</span>
+                <span class="method-start">1181531 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1198668 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">duanxinxi</span>
+                <span class="method-start">1207041 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1216218 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shoucangjia</span>
+                <span class="method-start">1224861 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1235122 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">jiaoyijilu</span>
+                <span class="method-start">1243732 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1255066 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteaddress</span>
+                <span class="method-start">1263425 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1283608 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">myselfchangeaddress</span>
+                <span class="method-start">1291834 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1311572 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deletefapiao</span>
+                <span class="method-start">1319642 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1340433 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shangjiaguanli</span>
+                <span class="method-start">1348454 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1364641 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">search</span>
+                <span class="method-start">1372773 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1377526 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add1</span>
+                <span class="method-start">1385794 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1422792 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">jiesuan</span>
+                <span class="method-start">1431483 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1455255 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add2</span>
+                <span class="method-start">1463702 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1478809 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">qingkong</span>
+                <span class="method-start">1487559 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1502097 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">jixugouwu</span>
+                <span class="method-start">1510689 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1521053 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">allshangpn</span>
+                <span class="method-start">1530107 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1616896 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tubiao</span>
+                <span class="method-start">1625978 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1656032 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">foodcart</span>
+                <span class="method-start">1665156 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1670514 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">zhangfan.BackStageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1673340 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">testBackstageLogin</span>
+                <span class="method-start">1680338 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testClassificationList</span>
+                <span class="method-start">1732094 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">testBackstageLogin</span>
+                <span class="method-start">1743122 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testViewBrandClassification</span>
+                <span class="method-start">1755888 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">testBackstageLogin</span>
+                <span class="method-start">1767229 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testViewBrandList</span>
+                <span class="method-start">1779748 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">testBackstageLogin</span>
+                <span class="method-start">1790511 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testViewModelList</span>
+                <span class="method-start">1804268 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">testBackstageLogin</span>
+                <span class="method-start">1815844 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testViewSizeList</span>
+                <span class="method-start">1828829 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1840311 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">azhouqianqian.BackgroundTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1842185 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">1849746 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Show_list7</span>
+                <span class="method-start">1864601 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">1974872 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAll6</span>
+                <span class="method-start">1987883 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">1994928 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_add1</span>
+                <span class="method-start">2008712 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">2031348 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_add2</span>
+                <span class="method-start">2045374 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">2079679 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_add3</span>
+                <span class="method-start">2093392 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">2108232 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_add4</span>
+                <span class="method-start">2121383 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">2155764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_add5</span>
+                <span class="method-start">2169111 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">2184280 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_add6</span>
+                <span class="method-start">2198062 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">2226493 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_add7</span>
+                <span class="method-start">2239879 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">2263764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_show8</span>
+                <span class="method-start">2277708 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">2289440 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testindent1</span>
+                <span class="method-start">2303084 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">2320783 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testindent2</span>
+                <span class="method-start">2334522 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">2348597 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testindent3</span>
+                <span class="method-start">2362324 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">2376227 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testindent4</span>
+                <span class="method-start">2389460 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">backLogin</span>
+                <span class="method-start">2407127 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testindent5</span>
+                <span class="method-start">2420537 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">2438330 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">azhouqianqian.ExchangePoints</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">2440783 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test1</span>
+                <span class="method-start">2447781 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test2</span>
+                <span class="method-start">2455602 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test3</span>
+                <span class="method-start">2477401 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test4</span>
+                <span class="method-start">2486029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test5</span>
+                <span class="method-start">2494379 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">2502071 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">azhouqianqian.HomeElectricity</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">2504883 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">test_jump1</span>
+                <span class="method-start">2511132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_jump2</span>
+                <span class="method-start">2522651 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_jump3</span>
+                <span class="method-start">2529269 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_jump4</span>
+                <span class="method-start">2535040 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_order1</span>
+                <span class="method-start">2540685 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_order2</span>
+                <span class="method-start">2562485 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_order3</span>
+                <span class="method-start">2584090 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_order4</span>
+                <span class="method-start">2605931 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_sort1_money</span>
+                <span class="method-start">2627522 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_sort2_money</span>
+                <span class="method-start">2646009 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">2664158 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">azhouqianqian.Login_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">2666910 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">2673518 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">azhouqianqian.Pingtuan</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">2676861 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_buy</span>
+                <span class="method-start">2683468 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_jump1</span>
+                <span class="method-start">2744727 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_jump2</span>
+                <span class="method-start">2761884 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_jump3</span>
+                <span class="method-start">2780883 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_jump4</span>
+                <span class="method-start">2797875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">2814757 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
